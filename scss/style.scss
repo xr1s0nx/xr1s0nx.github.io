@@ -1,0 +1,216 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body,
+html {
+   overflow-x: hidden;
+}
+
+body {
+   font-family: "Nunito Sans", sans-serif;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 24px;
+}
+
+.header {
+   background-image: url(../img/header-bg.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 85px 0 0;
+   height: 100vh;
+
+   .header__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+   }
+
+   .header__content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .content__description {
+          margin-bottom: 140px;
+      }
+
+      .content__title {
+         font-weight: 400;
+         font-size: 58px;
+         line-height: 70px;
+         border-bottom: 1px solid #000;
+         margin-bottom: 55px;
+
+         span {
+            font-weight: 700;
+         }
+      }
+
+      .plus__list {
+
+         .plus-text {
+            font-size: 26px;
+            line-height: 24px;
+         }
+
+         .plus-text + .plus-text {
+            margin-top: 20px;
+         }
+      }
+
+      .googlePlay__btn {
+         display: block;
+         margin-top: 65px;
+      }
+   }
+
+   .content__img {
+       display: block;
+       position: relative;
+
+       &::before {
+           position: absolute;
+           content: url(../img/content-img-before.png);
+           width: 354px;
+           height: 340px;
+           bottom: -80px;
+           left: -250px;
+       }
+   }
+}
+
+.container {
+   max-width: 1720px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.boutique__mob img{
+    display: none;
+}
+
+@media screen and (max-width: 1280px)  {
+    .container {
+        max-width: 1150px;
+    }
+
+    .content__title {
+        font-size: 48px !important;
+    }
+
+    .plus-text {
+        font-size: 21px !important;
+    }
+
+    .logo__img {
+        width: 213px;
+        height: 69px;
+    }
+
+    .boutique__logo {
+        width: 112px;
+        height: 47px;
+    }
+
+    .content__img img{
+        width: 490px;
+    }
+
+    .content__img::before {
+        content: url(../img/content-img-before-1280.png) !important;
+        width: 219px !important;
+        height: 210px !important;
+        left: -150px !important;
+    }
+
+    .content__description {
+        margin-bottom: 25px !important;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .boutique__logo {
+        display: none;
+    }
+
+    .header {
+        padding-top: 40px;
+        padding-bottom: 20px !important;
+        background-image: none;
+        background-color: #fff !important;
+    }
+
+    .header__top {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .header__content {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    .content__description {
+        text-align: center !important;
+    }
+
+    .content__img img{
+        width: 340px;
+    }
+
+    .content__img::before {
+        display: none;
+    }
+
+    .logo__img {
+        width: 197px;
+    }
+
+    .content__title {
+        font-size: 33px !important;
+    }
+
+    .plus-text {
+        font-size: 18px !important;
+    }
+
+    .googlePlay__img {
+        width: 139px !important;
+    }
+
+    .content__title {
+        position: relative !important;
+        border-bottom: none !important;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 50%;
+            height: 1px;
+            margin: 0 auto;
+            bottom: 0;
+            left: 25%;
+            background-color: #000;
+        }
+    }
+
+    .boutique__mob img{
+        display: block;
+        width: 82px !important;
+        margin: 0 auto;
+    }
+}
