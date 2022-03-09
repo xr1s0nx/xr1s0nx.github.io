@@ -1,0 +1,523 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap");
+
+body {
+   font-family: "Josefin Sans", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+   color: #E8E8E8;
+}
+
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+textarea:focus,
+input:focus {
+   outline: none;
+}
+
+.container {
+   max-width: 1130px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.header {
+   background-image: url(../img/header-bg.png);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 264px 0 162px;
+}
+
+.header__content {
+   text-align: center;
+
+   .header__title {
+      font-size: 46px;
+      margin-bottom: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4.8px;
+   }
+
+   .header__subtitle {
+      font-weight: 400;
+      font-size: 22px;
+      margin-bottom: 50px;
+      letter-spacing: 6.8px;
+   }
+
+   .header__serach {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px;
+      background-color: #fff;
+      width: 650px;
+      margin: 0 auto;
+      margin-bottom: 108px;
+
+      input {
+         border: none;
+         width: 500px;
+         margin-left: 2px;
+         padding: 18px 0;
+         text-align: center;
+         font-family: "Josefin Sans", sans-serif;
+         font-size: 14px;
+
+         &::placeholder {
+            font-family: "Josefin Sans", sans-serif;
+            text-align: center;
+            font-size: 14px;
+            color: #999999;
+            letter-spacing: 2.8px;
+         }
+      }
+
+      button {
+         border: none;
+         width: 150px;
+         height: 100%;
+         color: #fff;
+         padding: 18px;
+         background-color: #5474fd;
+         font-family: "Aleo", serif;
+         font-size: 14px;
+         position: relative;
+         text-align: center;
+         cursor: pointer;
+         text-transform: uppercase;
+         padding-left: 5px;
+         letter-spacing: 1.4px;
+         font-weight: 400;
+         transition: 0.3s;
+
+         &:hover {
+            background-color: #445fda;
+         }
+
+         &::after {
+            content: url(../img/search-loop.svg);
+            position: absolute;
+            width: 22px;
+            height: 24px;
+            top: 15px;
+            right: 17px;
+         }
+      }
+   }
+
+   .scroll__down {
+      display: block;
+      width: 108px;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+
+      img {
+         transition: 0.5s;
+      }
+
+      &:hover {
+         img {
+            transform: translateY(10px);
+         }
+      }
+   }
+}
+
+.mainNav {
+   padding: 32px 0 25px;
+   background-color: #5474fd;
+
+   .nav__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo__link {
+         font-family: "Josefin Sans", sans-serif;
+         font-size: 24px;
+         line-height: 26px;
+         letter-spacing: 2.4px;
+         text-transform: uppercase;
+      }
+
+      .nav-bar {
+         width: 525px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         .nav__link {
+            font-family: "Aleo", serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.5s;
+
+            &:hover {
+               color: rgb(179, 176, 176);
+            }
+         }
+      }
+   }
+}
+
+.WhyChoose {
+   background-image: url(../img/WhyChoose-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   padding: 117px 0;
+
+   .whyChoose__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .whyChoose__description {
+         width: 560px;
+         text-align: left;
+      }
+
+      .description__title {
+         font-family: "Aleo", serif;
+         font-size: 36px;
+         margin-bottom: 50px;
+      }
+
+      .description__text {
+         font-family: "Josefin Sans", sans-serif;
+         letter-spacing: 1.6px;
+         font-size: 16px;
+         line-height: 26px;
+         margin-bottom: 45px;
+      }
+
+      .description__btn {
+         display: block;
+         width: 228px;
+         padding: 21px 0 16px;
+         text-transform: uppercase;
+         text-align: center;
+         background-color: #5474fd;
+         font-family: "Aleo", serif;
+         font-size: 16px;
+         letter-spacing: 1.2px;
+         transition: 0.5s;
+
+         &:hover {
+            background-color: #445fda;
+         }
+      }
+   }
+
+   .whyChoose__imgs {
+      width: 440px;
+
+      .whyChoose__img2 {
+         margin-left: 90px;
+      }
+   }
+}
+
+.plusSection {
+   padding: 100px 0 115px;
+   background-color: #333;
+
+   .plusSection__wrap {
+      display: flex;
+      padding: 0 55px;
+      justify-content: space-between;
+      align-items: center;
+
+      .plus__item {
+         text-align: center;
+
+         .plus__img {
+            margin-bottom: 35px;
+            padding: 18px;
+            // border-radius: 100%;
+            background-color: #333;
+            z-index: 10;
+            // width: 99px;
+            // height: 99px;
+            position: relative;
+         }
+
+         .plus__text {
+            font-family: "Aleo", serif;
+            font-size: 36px;
+            line-height: 24px;
+            font-weight: 400;
+         }
+      }
+
+      .middle__img {
+         position: relative;
+
+         &:after {
+            position: absolute;
+            content: url(../img/shape.svg);
+            left: -285px;
+            top: -50px;
+            width: 777px;
+            height: 99px;
+            z-index: 9;
+         }
+      }
+   }
+}
+
+.mainSection {
+   padding: 227px 0 95px;
+   background-image: url(../img/spainSection-bg1.png);
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: cover;
+
+   .spainBlock {
+      width: 543px;
+      padding: 50px 35px;
+      background-color: rgba(35, 35, 35, 0.9);
+
+      .spainBlock__subtitle {
+         font-family: "Josefin Sans", sans-serif;
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 26px;
+         margin-bottom: 23px;
+      }
+
+      .spainBlock__title {
+         text-transform: uppercase;
+         font-family: "Josefin Sans", sans-serif;
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 26px;
+         margin-bottom: 13px;
+      }
+
+      .spainBlock__text {
+         font-size: 16px;
+         margin-bottom: 46px;
+      }
+
+      .spainBlock__btn {
+         display: block;
+         text-align: center;
+         width: 228px;
+         padding: 21px 0 16px;
+         text-transform: uppercase;
+         background-color: #5474fd;
+         font-family: "Aleo", serif;
+         transition: .5s;
+         font-size: 16px;
+         letter-spacing: 1.2px;
+
+         &:hover {
+            background-color: #445fda;
+         }
+      }
+   }
+}
+
+.mainSection2 {
+   background-image: url(../img/spainSection-bg2.png);
+
+   .spainBlock {
+      margin-left: auto;
+   }
+}
+
+.whatOurSay {
+   background-image: url(../img/whatOurSay-bg.png);
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+   padding: 200px 0 130px;
+
+   .whatOurSay__title {
+      font-family: "Aleo", serif;
+      font-size: 36px;
+      margin-bottom: 90px;
+      font-weight: 400;
+   }
+
+   .whatOurSay__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333333;
+
+      .block__descr {
+         padding: 49px 25px 39px 62px;
+
+         .descr__title {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+         }
+
+         .descr__text {
+            text-indent: 40px;
+            position: relative;
+
+            &::after {
+               position: absolute;
+               content: url(../img/textDots.png);
+               left: -45px;
+               top: -10px;
+               width: 50px;
+            }
+         }
+      }
+   }
+}
+
+.footer {
+   background-color: #232323;
+   padding: 122px 0 53px;
+   text-align: center;
+
+   .footer__logo {
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 8px;
+      letter-spacing: 3.36px;
+   }
+
+   .footer__subtitle {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1.6px;
+      margin-bottom: 20px;
+   }
+
+   .footer__socials {
+      width: 166px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .social__btn {
+         font-size: 16px;
+         color: white;
+         transition: .5s;
+
+         &:hover {
+            color: rgba(84, 116, 253, 1);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   .plusSection .plusSection__wrap .middle__img:after {
+      display: none;
+   }
+
+   .whatOurSay .whatOurSay__block .block__descr {
+      padding: 29px 5px 19px 42px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .whatOurSay .whatOurSay__block {
+      flex-direction: column;
+      max-width: 445px;
+      margin: 0 auto;
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   .whatOurSay__title {
+      text-align: center;
+   }
+
+   .plusSection .plusSection__wrap {
+      flex-direction: column;
+
+      .plus__item {
+         margin-bottom: 20px;
+      }
+   }
+
+   .whyChoose__imgs {
+      display: none;
+   }
+
+   .WhyChoose .whyChoose__content .whyChoose__description {
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .WhyChoose .whyChoose__content .description__btn {
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 695px) {
+   .header__content .header__serach {
+      width: 90%;
+   }
+
+   .header__content .header__serach button::after {
+      display: none;
+   }
+
+   .header__content .header__serach button {
+      padding-left: 18px;
+   }
+
+   .mainNav .nav__wrap .nav-bar {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .mainSection .spainBlock {
+      width: 90%;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .header__content .header__serach {
+      flex-direction: column;
+
+      input {
+         width: 100%;
+         &::placeholder {
+            font-size: 12px;
+         }
+      }      
+   }
+
+   .header__content .header__serach button {
+      width: 100%;
+   }
+}
