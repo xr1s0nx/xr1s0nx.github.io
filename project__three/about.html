@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <title>Document</title>
+      <div class="modal__zak">
+         <form class="modal">
+           <a onclick="ClModal()" href="#" class="btn__close">
+               <img src="img/mobCl-btn.svg" alt="">
+           </a>
+           <h3 class="modal__title">Заявка на расчет</h3>
+           <div class="input">
+               <p>Имя</p>
+               <input type="text" class="inp">
+           </div>
+           <div class="input">
+               <p>Электронная почта <span>*</span></p>
+               <input type="email" class="inp" required>
+           </div>
+           <div class="input">
+               <p>Телефон<span>*</span></p>
+               <input type="tel" class="inp" required>
+           </div>
+           <div class="input ">
+               <p>Текст заявки</p>
+               <input type="text" class="inp last__inp">
+           </div>
+           <div class="input">
+               <p>Прикрепите файл</p>
+               <label for="file-upload" class="custom-file-upload">
+                   Выберите файл...
+               </label>
+               <input id="file-upload" type="file"/>
+           </div>
+           <button type="submit">Отправить заявку</button>
+         </form>
+     </div>
+   </head>
+   <body>
+      <header class="header">
+         <div class="header__top">
+            <div class="container">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="" class="logo__img" />
+               </a>
+               <nav class="header__nav">
+                  <a href="index.html" class="nav__item">Главная</a>
+                  <a href="#" class="nav__item">О компании</a>
+                  <a href="#" class="nav__item">Наши проекты</a>
+                  <a href="equipment.html" class="nav__item">Оборудование</a>
+                  <a href="opportunities.html" class="nav__item">Услуги</a>
+                  <a href="#" class="nav__item">Лицензии и сертификаты</a>
+                  <a href="quality.html" class="nav__item">Качество</a>
+               </nav>
+               <div class="social__block">
+                  <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                  <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                  <a  onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+               </div>
+               <button class="mob-menu__btn" onclick="mobMenuOpen()">
+                  <img src="img/mob-btn.svg" alt="" />
+               </button>
+               <button class="mobCl-menu__btn" onclick="mobMenuClose()">
+                  <img src="img/mobCl-btn.svg" alt="" />
+               </button>
+               <div class="mob-menu">
+                  <nav class="mob__nav">
+                     <a href="index.html" class="mob__nav-item">Главная</a>
+                     <a href="#" class="mob__nav-item">О компании</a>
+                     <a href="#" class="mob__nav-item">Наши проекты</a>
+                     <a href="equipment.html" class="mob__nav-item">Оборудование</a>
+                     <a href="opportunities.html" class="mob__nav-item">Услуги</a>
+                     <a href="#" class="mob__nav-item">Лицензии и сертификаты</a>
+                     <a href="quality.html" class="mob__nav-item">Качество</a>
+                  </nav>
+                  <div class="moe-menu__bottom">
+                     <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                     <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                     <a  onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="about__head">
+         <div class="container">
+            <div class="head__wrap">
+               <div class="head__descr">
+                  <h3 class="descr__title">О компании</h3>
+                  <p class="descr__subtitle">ЗАО "Инновационные технологии связи" - это намного больше, чем просто контрактное производство</p>
+               </div>
+               <img src="img/about-head-bg.jpg" alt="" class="head__bg" />
+            </div>
+         </div>
+      </section>
+      <section class="team">
+         <div class="container">
+            <div class="team__wrap">
+               <img src="img/team.jpg" alt="" class="team__img" />
+               <h5 class="team__title">Наша команда</h5>
+            </div>
+         </div>
+      </section>
+      <section class="performance">
+         <div class="container">
+            <h3 class="performance__title">Производительность</h3>
+            <div class="preformance__content">
+               <div class="block">
+                  <img src="img/perf-img1.jpg" alt="" class="block__img" />
+                  <p class="perf__text">
+                     Мы используем на своем производстве современные автоматы-установщики компонентов YS-12/YS-12F YAMAHA. Они универсальны, быстро
+                     настраиваются и позволяют производить точный монтаж со стабильно высоким качеством.<br /><br />Производительность установщиков до
+                     56 тыс. компонентов в час. Точность установки — 50 мкм.<br /><br />Автоматы YS-12/YS-12F это 10 установочных головок с
+                     независимым сервоуправлением
+                  </p>
+               </div>
+               <div class="main__block">
+                  <p class="main__block-text">Cобираем 1000<br />плат средней<br />сложности<br />за 8 рабочих часов</p>
+               </div>
+               <div class="block">
+                  <img src="img/perf-img2.jpg" alt="" class="block__img" />
+                  <p class="perf__text">
+                     Мы используем на своем производстве современные автоматы-установщики компонентов YS-12/YS-12F YAMAHA. Они универсальны, быстро
+                     настраиваются и позволяют производить точный монтаж со стабильно высоким качеством.<br /><br />Производительность установщиков до
+                     56 тыс. компонентов в час. Точность установки — 50 мкм.<br /><br />Автоматы YS-12/YS-12F это 10 установочных головок с
+                     независимым сервоуправлением
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="vert-slider">
+         <div class="container">
+            <div class="vert__slider-wrap">
+               <div class="slide">
+                  <h3 class="mob-title">Контроль качества</h3>
+
+                  <div class="slide__content">
+                     <div class="left__side">
+                        <h2 class="side__title">&lt0,1%</h2>
+                        <p class="side__text">
+                           Менее 0,1% составляет возврат готовых изделий для устранения брака, благодаря вводу в строй автоматизированного оптического
+                           контроля, предваряющего контроль ОТК.
+                        </p>
+                     </div>
+                     <div class="right__slide">
+                        <h2 class="side__title">Контроль качества</h2>
+                        <div class="side__blocks">
+                           <div class="block">
+                              <h3 class="block__title">1 контроль</h3>
+                              <p class="block__text">
+                                 Первый контроль качества монтажа происходит еще на производственной линии с помощью автоматической оптической
+                                 инспекции. Она проверяет высоту, точность установки компонентов, количество нанесенной пасты, равномерность прогрева
+                                 и соответствие номиналов.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">2 контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">Рентген-контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <h3 class="mob-title">Контроль качества</h3>
+
+                  <div class="slide__content">
+                     <div class="left__side">
+                        <h2 class="side__title">&lt0,1%</h2>
+                        <p class="side__text">
+                           Менее 0,1% составляет возврат готовых изделий для устранения брака, благодаря вводу в строй автоматизированного оптического
+                           контроля, предваряющего контроль ОТК.
+                        </p>
+                     </div>
+                     <div class="right__slide">
+                        <h2 class="side__title">Контроль качества</h2>
+                        <div class="side__blocks">
+                           <div class="block">
+                              <h3 class="block__title">1 контроль</h3>
+                              <p class="block__text">
+                                 Первый контроль качества монтажа происходит еще на производственной линии с помощью автоматической оптической
+                                 инспекции. Она проверяет высоту, точность установки компонентов, количество нанесенной пасты, равномерность прогрева
+                                 и соответствие номиналов.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">2 контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">Рентген-контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <h3 class="mob-title">Контроль качества</h3>
+
+                  <div class="slide__content">
+                     <div class="left__side">
+                        <h2 class="side__title">&lt0,1%</h2>
+                        <p class="side__text">
+                           Менее 0,1% составляет возврат готовых изделий для устранения брака, благодаря вводу в строй автоматизированного оптического
+                           контроля, предваряющего контроль ОТК.
+                        </p>
+                     </div>
+                     <div class="right__slide">
+                        <h2 class="side__title">Контроль качества</h2>
+                        <div class="side__blocks">
+                           <div class="block">
+                              <h3 class="block__title">1 контроль</h3>
+                              <p class="block__text">
+                                 Первый контроль качества монтажа происходит еще на производственной линии с помощью автоматической оптической
+                                 инспекции. Она проверяет высоту, точность установки компонентов, количество нанесенной пасты, равномерность прогрева
+                                 и соответствие номиналов.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">2 контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">Рентген-контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <h3 class="mob-title">Контроль качества</h3>
+
+                  <div class="slide__content">
+                     <div class="left__side">
+                        <h2 class="side__title">&lt0,1%</h2>
+                        <p class="side__text">
+                           Менее 0,1% составляет возврат готовых изделий для устранения брака, благодаря вводу в строй автоматизированного оптического
+                           контроля, предваряющего контроль ОТК.
+                        </p>
+                     </div>
+                     <div class="right__slide">
+                        <h2 class="side__title">Контроль качества</h2>
+                        <div class="side__blocks">
+                           <div class="block">
+                              <h3 class="block__title">1 контроль</h3>
+                              <p class="block__text">
+                                 Первый контроль качества монтажа происходит еще на производственной линии с помощью автоматической оптической
+                                 инспекции. Она проверяет высоту, точность установки компонентов, количество нанесенной пасты, равномерность прогрева
+                                 и соответствие номиналов.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">2 контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">Рентген-контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slide">
+                  <h3 class="mob-title">Контроль качества</h3>
+
+                  <div class="slide__content">
+                     <div class="left__side">
+                        <h2 class="side__title">&lt0,1%</h2>
+                        <p class="side__text">
+                           Менее 0,1% составляет возврат готовых изделий для устранения брака, благодаря вводу в строй автоматизированного оптического
+                           контроля, предваряющего контроль ОТК.
+                        </p>
+                     </div>
+                     <div class="right__slide">
+                        <h2 class="side__title">Контроль качества</h2>
+                        <div class="side__blocks">
+                           <div class="block">
+                              <h3 class="block__title">1 контроль</h3>
+                              <p class="block__text">
+                                 Первый контроль качества монтажа происходит еще на производственной линии с помощью автоматической оптической
+                                 инспекции. Она проверяет высоту, точность установки компонентов, количество нанесенной пасты, равномерность прогрева
+                                 и соответствие номиналов.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">2 контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                           <div class="block">
+                              <h3 class="block__title">Рентген-контроль</h3>
+                              <p class="block__text">
+                                 Второй контроль проводит контролёр ОТК с помощью электронного микроскопа. Он увеличивает изображение до 100 крат и
+                                 выводит его на экран монитора. У микроскопа есть специальный стол, на котором контролёр может изучать качество пайки
+                                 под углом. Так ни один даже мельчайший дефект не будет пропущен.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="benefits">
+         <div class="container">
+            <h3 class="benefits__title">Наши преимущества</h3>
+            <div class="benefits__blocks">
+               <div class="block">
+                  <img src="img/benefits-block1.png" alt="" class="block__img" />
+                  <h5 class="block__title">ВЫПОЛНЕНИЕ ОБЯЗАТЕЛЬСТВ В СРОК</h5>
+                  <p class="block__text">Знаем точно, когда поступит комплектация, и планируем производство плавно, без авралов.</p>
+               </div>
+               <div class="block">
+                  <img src="img/benefits-block2.png" alt="" class="block__img" />
+                  <h5 class="block__title">ВЫПОЛНЕНИЕ ОБЯЗАТЕЛЬСТВ В СРОК</h5>
+                  <p class="block__text">Знаем точно, когда поступит комплектация, и планируем производство плавно, без авралов.</p>
+               </div>
+               <div class="block">
+                  <img src="img/benefits-block3.png" alt="" class="block__img" />
+                  <h5 class="block__title">ВЫПОЛНЕНИЕ ОБЯЗАТЕЛЬСТВ В СРОК</h5>
+                  <p class="block__text">Знаем точно, когда поступит комплектация, и планируем производство плавно, без авралов.</p>
+               </div>
+               <div class="block">
+                  <img src="img/benefits-block4.png" alt="" class="block__img" />
+                  <h5 class="block__title">ВЫПОЛНЕНИЕ ОБЯЗАТЕЛЬСТВ В СРОК</h5>
+                  <p class="block__text">Знаем точно, когда поступит комплектация, и планируем производство плавно, без авралов.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="wantEks">
+         <div class="container">
+            <div class="wantEks__content">
+               <h5 class="content__title">Хочу на экскурсию!</h5>
+               <p class="content__text">
+                  Приглашаем клиентов и заинтересованных партнеров посетить производственный комплекс. Вместе с сотрудником отдела сопровождения Вы
+                  увидите все этапы производственного процесса и получите исчерпывающие ответы на интересующие Вас вопросы.
+               </p>
+               <a href="#" class="content__btn">Заявка на экскурсию</a>
+            </div>
+         </div>
+      </section>
+      <section class="management">
+         <div class="container">
+            <h2 class="management__title">В нашей компании внедрена система менеджмента качества</h2>
+            <img src="img/charter.png" alt="" class="charter-img" />
+         </div>
+      </section>
+      <section class="contacts">
+         <div class="container">
+            <h2 class="contacts__title">Офис компании</h2>
+            <div class="contacts__blocks">
+               <div class="block">
+                  <p class="block__title">ТЕЛЕФОН</p>
+                  <a href="tel:84959374003" class="block__link tel">8 495 937-40-03</a>
+               </div>
+               <div class="block">
+                  <p class="block__title">АДРЕС</p>
+                  <p class="block__text">111141, Россия, Москва<br>2-й проезд Перова Поля,<br>д.5, пом. 18/1</p>
+               </div>
+               <div class="block">
+                  <p class="block__title">EMAIL</p>
+                  <a href="mailto:info@innotechsvyaz.ru" class="block__link">info@innotechsvyaz.ru</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="map">
+         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Add04ca6db886d703c7fd62fc51e7653e1691296a610597ce89006e2df63a0b71&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="left__side">
+                  <div class="col">
+                     <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="opportunities.html" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+                  <div class="col">
+                     <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="opportunities.html" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+                  <div class="col">
+                     <h5 class="col__title">Контакты</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="opportunities.html" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+               </div>
+               <a href="#" class="logo__link">
+                  <img src="img/logo.svg" alt="" class="logo__img" />
+               </a>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
