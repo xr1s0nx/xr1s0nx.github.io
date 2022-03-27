@@ -137,6 +137,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.projects {
+  max-height: 100vh;
+}
 .header__top .social__block .phone__num {
   color: #90929f;
   font-size: 24px;
@@ -297,6 +301,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   max-width: 1525px;
+  height: 13vh;
   margin: 0 auto;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -321,6 +326,7 @@ body {
 .projects .projects__content {
   display: -webkit-box;
   display: -ms-flexbox;
+  height: 87vh;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
