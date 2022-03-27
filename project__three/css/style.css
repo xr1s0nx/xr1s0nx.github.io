@@ -1358,8 +1358,8 @@ input[type=file] {
   text-align: center;
   padding: 36px 50px 55px 50px;
   background-color: #fff;
-  -webkit-box-shadow: 0 10px 40px #161926;
-          box-shadow: 0 10px 40px #161926;
+  -webkit-box-shadow: 0 10px 40px rgba(22, 25, 38, 0.19);
+          box-shadow: 0 10px 40px rgba(22, 25, 38, 0.19);
 }
 .modal__zak .modal button {
   text-transform: uppercase;
