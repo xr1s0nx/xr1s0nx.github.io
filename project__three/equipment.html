@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <title>Document</title>
+      <div class="modal__zak">
+        <form class="modal">
+          <a onclick="ClModal()" href="#" class="btn__close">
+              <img src="img/mobCl-btn.svg" alt="">
+          </a>
+          <h3 class="modal__title">Заявка на расчет</h3>
+          <div class="input">
+              <p>Имя</p>
+              <input type="text" class="inp">
+          </div>
+          <div class="input">
+              <p>Электронная почта <span>*</span></p>
+              <input type="email" class="inp" required>
+          </div>
+          <div class="input">
+              <p>Телефон<span>*</span></p>
+              <input type="tel" class="inp" required>
+          </div>
+          <div class="input ">
+              <p>Текст заявки</p>
+              <input type="text" class="inp last__inp">
+          </div>
+          <div class="input">
+              <p>Прикрепите файл</p>
+              <label for="file-upload" class="custom-file-upload">
+                  Выберите файл...
+              </label>
+              <input id="file-upload" type="file"/>
+          </div>
+          <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+   </head>
+   <body>
+      <header class="header">
+         <div class="header__top">
+            <div class="container">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="" class="logo__img" />
+               </a>
+               <nav class="header__nav">
+                  <a href="index.html" class="nav__item">Главная</a>
+                  <a href="about.html" class="nav__item">О компании</a>
+                  <a href="#" class="nav__item">Наши проекты</a>
+                  <a href="#" class="nav__item">Оборудование</a>
+                  <a href="opportunities.html" class="nav__item">Услуги</a>
+                  <a href="#" class="nav__item">Лицензии и сертификаты</a>
+                  <a href="quality.html" class="nav__item">Качество</a>
+               </nav>
+               <div class="social__block">
+                  <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                  <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                  <a  onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+               </div>
+               <button class="mob-menu__btn" onclick="mobMenuOpen()">
+                  <img src="img/mob-btn.svg" alt="" />
+               </button>
+               <button class="mobCl-menu__btn" onclick="mobMenuClose()">
+                  <img src="img/mobCl-btn.svg" alt="" />
+               </button>
+               <div class="mob-menu">
+                  <nav class="mob__nav">
+                     <a href="index.html" class="mob__nav-item">Главная</a>
+                     <a href="about.html" class="mob__nav-item">О компании</a>
+                     <a href="#" class="mob__nav-item">Наши проекты</a>
+                     <a href="#" class="mob__nav-item">Оборудование</a>
+                     <a href="opportunities.html" class="mob__nav-item">Услуги</a>
+                     <a href="#" class="mob__nav-item">Лицензии и сертификаты</a>
+                     <a href="quality.html" class="mob__nav-item">Качество</a>
+                  </nav>
+                  <div class="moe-menu__bottom">
+                     <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                     <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                     <a  onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="equip">
+         <div class="opportunities">
+            <div class="container">
+               <div class="opportunities__top">
+                  <div class="top__title-block">
+                     <h3 class="title">НАШЕ<br />оборудование</h3>
+                  </div>
+                  <img src="img/equipment-img.jpg" alt="" class="top__img" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="equip__content">
+         <div class="container">
+            <h2 class="content__title">Мы можем гарантировать высокую производительность с требуемой точностью установки компонентов</h2>
+            <p class="content__subtitle">Последовательность технологического процесса на нашем производстве</p>
+            <div class="nav__slider">
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+                  1
+               </div>
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+
+                  2
+               </div>
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+
+                  3
+               </div>
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+
+                  4
+               </div>
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+
+                  5
+               </div>
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+
+                  6
+               </div>
+               <div class="slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="71.526" height="83.803" viewBox="0 0 71.526 83.803">
+                     <g id="Контур_117" data-name="Контур 117" transform="translate(71.526) rotate(90)" fill="#fcfdfe">
+                        <path
+                           d="M 62.56548690795898 71.02590942382812 L 21.23724746704102 71.02590942382812 L 0.5794792175292969 35.7629508972168 L 21.23725700378418 0.5000064373016357 L 62.56548690795898 0.5000064373016357 L 83.22325897216797 35.7629508972168 L 62.56548690795898 71.02590942382812 Z"
+                           stroke="none"
+                        />
+                        <path
+                           d="M 21.52382659912109 0.9999923706054688 L 1.158958435058594 35.7629508972168 L 21.5238151550293 70.52589416503906 L 62.27890777587891 70.52589416503906 L 82.64377593994141 35.7629508972168 L 62.27890777587891 0.9999923706054688 L 21.52382659912109 0.9999923706054688 M 20.95069122314453 -7.62939453125e-06 L 62.85204315185547 -7.62939453125e-06 L 83.802734375 35.7629508972168 L 62.85204315185547 71.52589416503906 L 20.95067977905273 71.52589416503906 L 0 35.7629508972168 L 20.95069122314453 -7.62939453125e-06 Z"
+                           stroke="none"
+                           fill="#ced0d8"
+                        />
+                     </g>
+                  </svg>
+
+                  7
+               </div>
+            </div>
+            <div class="content__wrap-equip">
+               <div class="process">
+                  <p class="process__title">Процесс установка компонентов</p>
+                  <p class="process__text">
+                     Мы используем на своем производстве современные автоматы-установщики компонентов YS-12/YS-12F YAMAHA. Они универсальны, быстро
+                     настраиваются и позволяют производить точный монтаж со стабильно высоким качеством.<br /><br />Производительность установщиков до
+                     56 тыс. компонентов в час. Точность установки — 50 мкм.
+                  </p>
+               </div>
+               <div class="equip__slider">
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <div class="slide">
+                     <img src="img/equip-slide.png" alt="" class="equip-slide" />
+                  </div>
+                  <!-- <button class="prev-slider"><img src="img/arrow1.svg" alt="" class="arrow" /></button>
+                  <button class="next-slider"><img src="img/arrow2.svg" alt="" class="arrow" /></button> -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="management">
+         <div class="container">
+            <h2 class="management__title">В нашей компании внедрена система менеджмента качества</h2>
+            <img src="img/charter.png" alt="" class="charter-img" />
+         </div>
+      </section>
+      <section class="contacts">
+         <div class="container">
+            <h2 class="contacts__title">Офис компании</h2>
+            <div class="contacts__blocks">
+               <div class="block">
+                  <p class="block__title">ТЕЛЕФОН</p>
+                  <a href="tel:84959374003" class="block__link tel">8 495 937-40-03</a>
+               </div>
+               <div class="block">
+                  <p class="block__title">АДРЕС</p>
+                  <p class="block__text">111141, Россия, Москва<br />2-й проезд Перова Поля,<br />д.5, пом. 18/1</p>
+               </div>
+               <div class="block">
+                  <p class="block__title">EMAIL</p>
+                  <a href="mailto:info@innotechsvyaz.ru" class="block__link">info@innotechsvyaz.ru</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="map">
+         <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Add04ca6db886d703c7fd62fc51e7653e1691296a610597ce89006e2df63a0b71&amp;source=constructor"
+            width="100%"
+            height="350"
+            frameborder="0"
+         ></iframe>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="left__side">
+                  <div class="col">
+                     <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="opportunities.html" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+                  <div class="col">
+                     <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="opportunities.html" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+                  <div class="col">
+                     <h5 class="col__title">Контакты</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="opportunities.html" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+               </div>
+               <a href="#" class="logo__link">
+                  <img src="img/logo.svg" alt="" class="logo__img" />
+               </a>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

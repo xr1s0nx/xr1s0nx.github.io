@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <title>Document</title>
+      <div class="modal__zak">
+        <form class="modal">
+          <a onclick="ClModal()" href="#" class="btn__close">
+              <img src="img/mobCl-btn.svg" alt="">
+          </a>
+          <h3 class="modal__title">Заявка на расчет</h3>
+          <div class="input">
+              <p>Имя</p>
+              <input type="text" class="inp">
+          </div>
+          <div class="input">
+              <p>Электронная почта <span>*</span></p>
+              <input type="email" class="inp" required>
+          </div>
+          <div class="input">
+              <p>Телефон<span>*</span></p>
+              <input type="tel" class="inp" required>
+          </div>
+          <div class="input ">
+              <p>Текст заявки</p>
+              <input type="text" class="inp last__inp">
+          </div>
+          <div class="input">
+              <p>Прикрепите файл</p>
+              <label for="file-upload" class="custom-file-upload">
+                  Выберите файл...
+              </label>
+              <input id="file-upload" type="file"/>
+          </div>
+          <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+   </head>
+   <body>
+      <header class="header">
+          
+         <div class="header__top">
+            <div class="container">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="" class="logo__img" />
+               </a>
+               <nav class="header__nav">
+                  <a href="index.html" class="nav__item">Главная</a>
+                  <a href="about.html" class="nav__item">О компании</a>
+                  <a href="#" class="nav__item">Наши проекты</a>
+                  <a href="equipment.html" class="nav__item">Оборудование</a>
+                  <a href="#" class="nav__item">Услуги</a>
+                  <a href="#" class="nav__item">Лицензии и сертификаты</a>
+                  <a href="#" class="nav__item">Качество</a>
+               </nav>
+               <div class="social__block">
+                  <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                  <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                  <a  onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+               </div>
+               <button class="mob-menu__btn" onclick="mobMenuOpen()">
+                  <img src="img/mob-btn.svg" alt="" />
+               </button>
+               <button class="mobCl-menu__btn" onclick="mobMenuClose()">
+                  <img src="img/mobCl-btn.svg" alt="" />
+               </button>
+               <div class="mob-menu">
+                  <nav class="mob__nav">
+                     <a href="index.html" class="mob__nav-item">Главная</a>
+                     <a href="about.html" class="mob__nav-item">О компании</a>
+                     <a href="#" class="mob__nav-item">Наши проекты</a>
+                     <a href="equipment.html" class="mob__nav-item">Оборудование</a>
+                     <a href="#" class="mob__nav-item">Услуги</a>
+                     <a href="#" class="mob__nav-item">Лицензии и сертификаты</a>
+                     <a href="#" class="mob__nav-item">Качество</a>
+                  </nav>
+                  <div class="moe-menu__bottom">
+                     <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                     <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                     <a onclick="OpModal()" href="#"  class="payment__btn">Заявка на расчет</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="quality">
+         <div class="opportunities">
+            <div class="container">
+               <div class="opportunities__top">
+                  <div class="top__title-block">
+                     <h3 class="title">О нашем<br />качестве</h3>
+                  </div>
+                  <img src="img/quality-img.jpg" alt="" class="top__img" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="quality__pluses">
+         <div class="container">
+            <h2 class="pluses__title">Обеспечение качества</h2>
+            <p class="pluses__subtitle">
+               Пожалуй, наиболее важная задача любого производства. Можно делать быстро или медленно, дешево или дорого, но если изделие не будет
+               работать, то деньги потрачены зря. Мы, конечно, тоже ошибаемся, но постоянно работаем над тем, чтобы свести свои ошибки к минимуму. Мы
+               все заинтересованы, чтобы вы к нам возвращались.
+            </p>
+            <div class="blocks">
+               <div class="blocks__row">
+                  <div class="block">
+                     <img src="img/plus1.png" alt="" class="block-img" />
+                     <h3 class="block-title">ВХОДНОЙ КОНТРОЛЬ КОМПЛЕКТУЮЩИХ</h3>
+                     <p class="block-text">
+                        На первом этапе мы осуществляем входной контроль комплектующих. Будь это наша поставка, или ваше давальческое сырье. Мы
+                        пересчитываем количество, сверяем наименования и номиналы со спецификацией, проверяем целостность упаковок, состояние
+                        контактов.
+                     </p>
+                  </div>
+                  <div class="block">
+                     <img src="img/plus2.png" alt="" class="block-img" />
+                     <h3 class="block-title">ОФИЦИАЛЬНЫЕ ПОСТАВЩИКИ</h3>
+                     <p class="block-text">
+                        Мы знаем, как много сейчас на рынке некондиционных электронных компонентов. Чтобы исключить любую, даже случайную, возможность
+                        попадания в ваше изделие контрафактных комплектующих, мы закупаем их только у прямых представителей производителей или
+                        официальных дистрибъюторов. Это дороже, чем если взять на рынке некий компонент неизвестного происхождения. И он может даже
+                        работать. Но кто может быть уверен, что он будет также хорошо работать в течение всего гарантийного срока или в сложных
+                        условиях?
+                     </p>
+                  </div>
+               </div>
+               <div class="blocks__row">
+                  <div class="block">
+                     <img src="img/plus3.png" alt="" class="block-img" />
+                     <h3 class="block-title">НАСТРОЙКА ТЕХНОЛОГИЧЕСКОГО ПРОЦЕССА</h3>
+                     <p class="block-text">
+                        Очень важно нанести на плату паяльной пасты ровно столько, сколько нужно, чтобы не было ни непропая, ни замыканий, а также
+                        правильно подобрать температурный профиль, который обеспечит качественное паянное соединение. Если у вас на плате используются
+                        микросхемы в корпусе BGA, визуально невозможно определить, насколько хорошо она установлена – это можно узнать только с
+                        помощью дополнительных исследований на рентген-аппарате. Лучше заранее построить технологический процесс так, чтобы не было
+                        нужды в подобных проверках. Именно этим и занимаются наши технологи.
+                     </p>
+                  </div>
+                  <div class="block">
+                     <img src="img/plus4.png" alt="" class="block-img" />
+                     <h3 class="block-title">АВТОМАТИЧЕСКАЯ ОПТИЧЕСКАЯ ИНСПЕКЦИЯ</h3>
+                     <p class="block-text">
+                        Это первый бастион защиты. На этом этапе проверяются высота и точность установки компонентов, количество нанесенной пасты,
+                        равномерность прогрева и соответствие номиналов. Не прошедшие контроль платы возвращаются для исправления.
+                     </p>
+                  </div>
+               </div>
+               <div class="blocks__row">
+                  <div class="block">
+                     <img src="img/plus5.png" alt="" class="block-img" />
+                     <h3 class="block-title">ОТК</h3>
+                     <p class="block-text">
+                        После установки выводных компонентов и мойки платы поступают на участок ОТК, где контролер с помощью мощного микроскопа
+                        проверяет качество пайки. Микроскоп позволяет рассматривать выводы под любым углом, что дает возможность заметить даже
+                        мельчайший дефект. Также контролер проверяет качество отмывки плат и, все ли компоненты установлены в соответствии со
+                        спецификацией. Все изделия не прошедшие проверку возвращаются на участки монтажа для доработки и исправления дефектов.
+                     </p>
+                  </div>
+                  <div class="block">
+                     <img src="img/plus6.png" alt="" class="block-img" />
+                     <h3 class="block-title">ИССЛЕДОВАНИЯ НА РЕНТГЕН-АППАРАТЕ</h3>
+                     <p class="block-text">
+                        Исследования на рентген-аппарате мы проводим дополнительно по вашему запросу, в случае если у вас есть сомнения в качестве
+                        установки микросхем в корпусе BGA или ему подобных.
+                     </p>
+                  </div>
+               </div>
+               <div class="blocks__row">
+                  <div class="block">
+                     <img src="img/plus7.png" alt="" class="block-img" />
+                     <h3 class="block-title">ТЕСТИРОВАНИЯ И ИСПЫТАНИЯ</h3>
+                     <p class="block-text">
+                        Наилучшим способом убедиться, что плата спаяна безошибочно, и все компоненты качественные – это тестирование, проведение
+                        которого возможно либо по контрольным точкам, либо с помощью стенда для испытаний. Стенд мы можем разработать и настроить
+                        сами, или вы можете передать нам его в готовом виде.
+                     </p>
+                  </div>
+                  <div class="block">
+                     <img src="img/plus8.png" alt="" class="block-img" />
+                     <h3 class="block-title">УПАКОВКА ПО СТАНДАРТАМ</h3>
+                     <p class="block-text">
+                        Наши кладовщики очень аккуратно упаковывают готовые изделия, чтобы исключить нанесение любого возможного ущерба. Не секрет,
+                        что во время транспортировки платы могут быть повреждены, поцарапаны, установленные выводные элементы погнуты или даже
+                        оторваны. Нам важно, чтобы ваши платы доехали до вас в целости и сохранности.
+                     </p>
+                  </div>
+               </div>
+               <div class="blocks__row">
+                  <div class="block">
+                     <img src="img/plus9.png" alt="" class="block-img" />
+                     <h3 class="block-title">ОБРАТНАЯ СВЯЗЬ ОТ КЛИЕНТОВ</h3>
+                     <p class="block-text">
+                        Нам очень важно получать от вас обратную связь, чтобы знать, на что нам нужно обратить внимание, что улучшить в нашей работе.
+                        Мы заинтересованы в том, чтобы вы получали только 100% работающие изделия. Для этого нам нужна ваша помощь.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="wantEks">
+        <div class="container">
+           <div class="wantEks__content">
+              <h5 class="content__title">Хочу на экскурсию!</h5>
+              <p class="content__text">
+                 Приглашаем клиентов и заинтересованных партнеров посетить производственный комплекс. Вместе с сотрудником отдела сопровождения Вы
+                 увидите все этапы производственного процесса и получите исчерпывающие ответы на интересующие Вас вопросы.
+              </p>
+              <a href="#" class="content__btn">Заявка на экскурсию</a>
+           </div>
+        </div>
+     </section>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="left__side">
+                  <div class="col">
+                     <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="#" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+                  <div class="col">
+                     <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="#" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+                  <div class="col">
+                     <h5 class="col__title">Контакты</h5>
+                     <a href="index.html" class="col__link">Главная</a>
+                     <a href="#" class="col__link">Услуги</a>
+                     <a href="#" class="col__link">Лицензии и сертификаты</a>
+                  </div>
+               </div>
+               <a href="#" class="logo__link">
+                  <img src="img/logo.svg" alt="" class="logo__img" />
+               </a>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
