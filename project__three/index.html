@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <link rel="stylesheet" href="fullpage/fullpage.min.css" />
+      <title>Document</title>
+      <div class="modal__zak">
+         <form class="modal">
+            <a onclick="ClModal()" href="#" class="btn__close">
+               <img src="img/mobCl-btn.svg" alt="" />
+            </a>
+            <h3 class="modal__title">Заявка на расчет</h3>
+            <div class="input">
+               <p>Имя</p>
+               <input type="text" class="inp" />
+            </div>
+            <div class="input">
+               <p>Электронная почта <span>*</span></p>
+               <input type="email" class="inp" required />
+            </div>
+            <div class="input">
+               <p>Телефон<span>*</span></p>
+               <input type="tel" class="inp" required />
+            </div>
+            <div class="input">
+               <p>Текст заявки</p>
+               <input type="text" class="inp last__inp" />
+            </div>
+            <div class="input">
+               <p>Прикрепите файл</p>
+               <label for="file-upload" class="custom-file-upload"> Выберите файл... </label>
+               <input id="file-upload" type="file" />
+            </div>
+            <button type="submit">Отправить заявку</button>
+         </form>
+      </div>
+   </head>
+   <body>
+      <div class="mob-menu">
+         <nav class="mob__nav">
+            <a href="#" class="mob__nav-item">Главная</a>
+            <a href="about.html" class="mob__nav-item">О компании</a>
+            <a href="#" class="mob__nav-item">Наши проекты</a>
+            <a href="equipment.html" class="mob__nav-item">Оборудование</a>
+            <a href="opportunities.html" class="mob__nav-item">Услуги</a>
+            <a href="#" class="mob__nav-item">Лицензии и сертификаты</a>
+            <a href="quality.html" class="mob__nav-item">Качество</a>
+         </nav>
+         <div class="moe-menu__bottom">
+            <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+            <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+            <a onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+         </div>
+      </div>
+      <div class="fullpage">
+         <header class="header section fp-noscroll">
+            <div class="header__top">
+               <div class="container">
+                  <a href="#" class="header__logo">
+                     <img src="img/logo.svg" alt="" class="logo__img" />
+                  </a>
+                  <nav class="header__nav">
+                     <a href="#" class="nav__item">Главная</a>
+                     <a href="about.html" class="nav__item">О компании</a>
+                     <a href="#" class="nav__item">Наши проекты</a>
+                     <a href="equipment.html" class="nav__item">Оборудование</a>
+                     <a href="opportunities.html" class="nav__item">Услуги</a>
+                     <a href="#" class="nav__item">Лицензии и сертификаты</a>
+                     <a href="quality.html" class="nav__item">Качество</a>
+                  </nav>
+                  <div class="social__block">
+                     <a href="tel:+74959374003" class="phone__num">+7 (495) 937-40-03</a>
+                     <a href="mailto:info@innotechsvyaz.ru" class="mail__adress">info@innotechsvyaz.ru</a>
+                     <a onclick="OpModal()" href="#" class="payment__btn">Заявка на расчет</a>
+                  </div>
+                  <button class="mob-menu__btn" onclick="mobMenuOpen()">
+                     <img src="img/mob-btn.svg" alt="" />
+                  </button>
+                  <button class="mobCl-menu__btn" onclick="mobMenuClose()">
+                     <img src="img/mobCl-btn.svg" alt="" />
+                  </button>
+                  
+               </div>
+            </div>
+            <div class="header__content">
+               <div class="container">
+                  <div class="content__wrap">
+                     <h1 class="header__title">Производство электроники<br />на заказ</h1>
+                     <p class="header__subtitle">
+                        Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах розничной
+                        торговли
+                     </p>
+                     <a href="#" class="header__btn">Наши проекты</a>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <section class="pluese section fp-auto-height fp-scrollable">
+            <div class="container">
+               <div class="pluses__wrap">
+                  <div class="row row1">
+                     <div class="block block1">
+                        <h3 class="block__title">Транспорт</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                     <div class="block block2">
+                        <h3 class="block__title">СВЯЗЬ</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                     <div class="block block3">
+                        <h3 class="block__title">МЕДИЦИНА</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                     <div class="block block4">
+                        <h3 class="block__title">ТРАНСПОРТ</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="row row2">
+                     <div class="block block5">
+                        <h3 class="block__title">ОБМЕН ДАННЫМИ</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                     <div class="block block6">
+                        <h3 class="block__title">ПРИБОРЫ УЧЕТА</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                     <div class="block block7">
+                        <h3 class="block__title">ОБМЕН ДАННЫМИ</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                     <div class="block block8">
+                        <h3 class="block__title">Терминалы самообслуживания</h3>
+                        <p class="block__text">
+                           Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах
+                           розничной торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется
+                           в больших продуктовых магазинах и супермаркетах.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="projects section fp-auto-height fp-scrollable">
+            <div class="container">
+               <div class="projects__wrap">
+                  <div class="projects__top">
+                     <h4 class="top__title">НАШИ ПРОЕКТЫ</h4>
+                     <p class="top__text">
+                        Электронно-механическое устройство, позволяющее автоматизировать процесс самообслуживания оплаты товара в магазинах розничной
+                        торговли. Такие устройства являются альтернативой традиционным кассам розничных сетей. Наиболее часто применяется в больших
+                        продуктовых магазинах и супермаркетах.
+                     </p>
+                  </div>
+                  <div class="projects__content">
+                     <div class="project__block">
+                        <img src="img/block-img1.jpg" alt="" class="block__img" />
+                        <div class="text__block">
+                           <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                        </div>
+                     </div>
+                     <div class="project__block">
+                        <img src="img/block-img2.jpg" alt="" class="block__img" />
+                        <div class="text__block">
+                           <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                        </div>
+                     </div>
+                     <div class="project__block">
+                        <img src="img/block-img3.jpg" alt="" class="block__img" />
+                        <div class="text__block">
+                           <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                        </div>
+                     </div>
+                     <div class="project__block">
+                        <img src="img/block-img4.jpg" alt="" class="block__img" />
+                        <div class="text__block">
+                           <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__content-mob">
+                     <div class="slider">
+                        <div class="project__block">
+                           <img src="img/block-img1.jpg" alt="" class="block__img" />
+                           <div class="text__block">
+                              <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                           </div>
+                        </div>
+                        <div class="project__block">
+                           <img src="img/block-img2.jpg" alt="" class="block__img" />
+                           <div class="text__block">
+                              <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                           </div>
+                        </div>
+                        <div class="project__block">
+                           <img src="img/block-img3.jpg" alt="" class="block__img" />
+                           <div class="text__block">
+                              <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                           </div>
+                        </div>
+                        <div class="project__block">
+                           <img src="img/block-img4.jpg" alt="" class="block__img" />
+                           <div class="text__block">
+                              <p class="block__text">Автоматика для<br />производства.<br />Серийная продукция.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="counts section">
+            <div class="container">
+               <div class="counts__wrap">
+                  <img src="img/counts-img.png" alt="" class="counts__img" />
+                  <div class="conts__block">
+                     <h4 class="block__title">ПРОИЗВОДСТВО В ЦИФРАХ</h4>
+                     <div class="blocks">
+                        <div class="blocks__item">
+                           <h4 class="item__title">180 номиналов</h4>
+                           <p class="item__text">количество компонентов, устанавливаемы на плату за один проход на линии</p>
+                        </div>
+                        <div class="blocks__item">
+                           <h4 class="item__title">180 номиналов</h4>
+                           <p class="item__text">количество компонентов, устанавливаемы на плату за один проход на линии</p>
+                        </div>
+                     </div>
+                     <div class="blocks">
+                        <div class="blocks__item">
+                           <h4 class="item__title">180 номиналов</h4>
+                           <p class="item__text">количество компонентов, устанавливаемы на плату за один проход на линии</p>
+                        </div>
+                        <div class="blocks__item">
+                           <h4 class="item__title">180 номиналов</h4>
+                           <p class="item__text">количество компонентов, устанавливаемы на плату за один проход на линии</p>
+                        </div>
+                     </div>
+                     <div class="blocks">
+                        <div class="blocks__item">
+                           <h4 class="item__title">180 номиналов</h4>
+                           <p class="item__text">количество компонентов, устанавливаемы на плату за один проход на линии</p>
+                        </div>
+                        <div class="blocks__item">
+                           <h4 class="item__title">180 номиналов</h4>
+                           <p class="item__text">количество компонентов, устанавливаемы на плату за один проход на линии</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="wantEks section">
+            <div class="container">
+               <div class="wantEks__content">
+                  <h5 class="content__title">Хочу на экскурсию!</h5>
+                  <p class="content__text">
+                     Приглашаем клиентов и заинтересованных партнеров посетить производственный комплекс. Вместе с сотрудником отдела сопровождения Вы
+                     увидите все этапы производственного процесса и получите исчерпывающие ответы на интересующие Вас вопросы.
+                  </p>
+                  <a href="#" class="content__btn">Заявка на экскурсию</a>
+               </div>
+            </div>
+         </section>
+         <footer class="footer section fp-scrollable">
+            <div class="container">
+               <div class="footer__content">
+                  <div class="left__side">
+                     <div class="col">
+                        <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                        <a href="#" class="col__link">Главная</a>
+                        <a href="opportunities.html" class="col__link">Услуги</a>
+                        <a href="#" class="col__link">Лицензии и сертификаты</a>
+                     </div>
+                     <div class="col">
+                        <h5 class="col__title">ИНФОРМАЦИЯ</h5>
+                        <a href="#" class="col__link">Главная</a>
+                        <a href="opportunities.html" class="col__link">Услуги</a>
+                        <a href="#" class="col__link">Лицензии и сертификаты</a>
+                     </div>
+                     <div class="col">
+                        <h5 class="col__title">Контакты</h5>
+                        <a href="#" class="col__link">Главная</a>
+                        <a href="opportunities.html" class="col__link">Услуги</a>
+                        <a href="#" class="col__link">Лицензии и сертификаты</a>
+                     </div>
+                  </div>
+                  <a href="#" class="logo__link">
+                     <img src="img/logo.svg" alt="" class="logo__img" />
+                  </a>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="fullpage/scrolloverflow.min.js"></script>
+      <script src="fullpage/fullpage.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
