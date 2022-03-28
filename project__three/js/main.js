@@ -13,7 +13,6 @@ function mobMenuOpen() {
     mobButtonOp.style.opacity = '0';
     mobButtonCl.style.visibility = 'visible';
     mobButtonCl.style.opacity = '1';
-    body.classList.add('noscroll');
     ft = true;
     scrolling()
 
@@ -25,7 +24,6 @@ function mobMenuClose() {
     mobButtonOp.style.opacity = '1';
     mobButtonCl.style.visibility = 'hidden';
     mobButtonCl.style.opacity = '0';
-    body.classList.remove('noscroll');
     ft = false;
     scrolling();
 
