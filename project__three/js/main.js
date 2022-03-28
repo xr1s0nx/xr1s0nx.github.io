@@ -47,7 +47,8 @@ function scrolling() {
         // normalScrollElements: '.pluese',
         scrollOverflow: true,
         dragAndMove: false,
-        navigation: true
+        navigation: true,
+        responsiveWidth: 1270
 	});
 
     if(ft == true) {
