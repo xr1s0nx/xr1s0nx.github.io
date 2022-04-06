@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="bootstrap/bootstrap-reboot.css" />
+      <link rel="stylesheet" href="bootstrap/bootstrap-grid.css" />
+      <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+      <link rel="stylesheet" href="css/style.css" />
+
+      <title>IMEX</title>
+   </head>
+   <body>
+      <div class="popUp">
+         <section class="consult">
+            <div class="container">
+               <form action="#" class="get__consult">
+                  <button onclick="PopUpCl()" class="closePopUp">
+                     <img src="img/close.svg" alt="" />
+                  </button>
+                  <h3 class="consult__title">Получить консультацию</h3>
+                  <p class="consult__subtitle">Оставьте свои данные и мы Вам перезвоним</p>
+                  <div class="row justify-content-between">
+                     <div class="col-12">
+                        <div class="inp__block">
+                           <p class="block__title">Ваше имя</p>
+                           <input type="text" class="block__inp" placeholder="Сергей Иванов" />
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="inp__block">
+                           <p class="block__title">Телефон</p>
+                           <input type="tel" class="block__inp" placeholder="+7 (" />
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="inp__block">
+                           <p class="block__title">E-mail</p>
+                           <input type="email" class="block__inp" placeholder="" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <textarea style="resize: none" placeholder="Ваше сообщение..."></textarea>
+                     </div>
+                  </div>
+                  <div class="row justify-content-between align-items-center">
+                     <div class="col-12">
+                        <button type="submit" class="btn">отправить</button>
+                     </div>
+                     <div class="col-12 d-flex align-items-center">
+                        <label class="check">
+                           <input type="checkbox" />
+                           <span class="checkmark"></span>
+                        </label>
+                        <p class="check__text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,</p>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </div>
+      <div class="popUp">
+         <section class="consult">
+            <div class="container">
+               <form action="#" class="get__consult">
+                  <button onclick="PopUpCl()" class="closePopUp">
+                     <img src="img/close.svg" alt="" />
+                  </button>
+                  <h3 class="consult__title">Получить консультацию</h3>
+                  <p class="consult__subtitle">Оставьте свои данные и мы Вам перезвоним</p>
+                  <div class="row justify-content-between">
+                     <div class="col-12">
+                        <div class="inp__block">
+                           <p class="block__title">Ваше имя</p>
+                           <input type="text" class="block__inp" placeholder="Сергей Иванов" />
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="inp__block">
+                           <p class="block__title">Телефон</p>
+                           <input type="tel" class="block__inp" placeholder="+7 (" />
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="inp__block">
+                           <p class="block__title">E-mail</p>
+                           <input type="email" class="block__inp" placeholder="" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <textarea style="resize: none" placeholder="Ваше сообщение..."></textarea>
+                     </div>
+                  </div>
+                  <div class="row justify-content-between align-items-center">
+                     <div class="col-12">
+                        <button type="submit" class="btn">отправить</button>
+                     </div>
+                     <div class="col-12 d-flex align-items-center">
+                        <label class="check">
+                           <input type="checkbox" />
+                           <span class="checkmark"></span>
+                        </label>
+                        <p class="check__text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,</p>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </div>
+      <header class="header">
+         <div class="header__top">
+            <div class="container">
+               <div class="row align-items-center justify-content-between">
+                  <div class="col-xl-3">
+                     <a href="#" class="logo__link">
+                        <img src="img/logo.svg" alt="" class="logo__img" />
+                     </a>
+                  </div>
+                  <div class="col d-flex justify-content-between align-items-center">
+                     <div class="social">
+                        <img src="img/adress.svg" alt="" class="social__img" />
+                        <a href="#" class="social__link">Адрес<br /><span>Москва</span></a>
+                     </div>
+                     <div class="social">
+                        <img src="img/tel.svg" alt="" class="social__img" />
+                        <a href="#" class="social__link">Звонок бесплатный<br /><span>8 800 000 00 00</span></a>
+                     </div>
+                     <div class="social">
+                        <img src="img/mail.svg" alt="" class="social__img" />
+                        <a href="#" class="social__link">E-mail<br /><span>pochta@pochta.ru</span></a>
+                     </div>
+                     <a onclick="PopUpOp()" href="#" class="button__app">Заявка на расчёт</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <nav class="header__nav">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-11 d-flex align-items-center header__sub-menu">
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="index.html">Главная</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                           <li><a href="#">Sub Item 3</a></li>
+                           <li><a href="#">Sub Item 4</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="about.html">О компании</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                           <li><a href="#">Sub Item 3</a></li>
+                           <li><a href="#">Sub Item 4</a></li>
+                           <li><a href="#">Sub Item 5</a></li>
+                           <li><a href="#">Sub Item 6</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="services.html">Услуги</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="clients.html">Клиенты</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="#">Отзывы</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="information.html">Информация</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub-menu-parent" tab-index="0">
+                        <a class="nav__item" href="contacts.html">Контакты</a>
+                        <ul class="sub-menu">
+                           <li><a href="#">Sub Item 1</a></li>
+                           <li><a href="#">Sub Item 2</a></li>
+                        </ul>
+                     </li>
+                  </div>
+                  <div class="col-xl-1 search__wrap">
+                     <form action="#" class="search" onclick="searchFull()">
+                        <input type="text" class="search-inp" placeholder="Поиск..." />
+                        <button type="submit" class="submBtn">
+                           <img src="img/search.svg" alt="" class="search__img" />
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div class="header__content">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-7">
+                     <h1 class="header__title">ДОСТАВИМ ВАШ ГРУЗ<br />ИЗ ЛЮБОЙ ТОЧКИ МИРА<br />ОТ ОДНОЙ КОРОБКИ</h1>
+                     <a onclick="PopUpOp()" href="#" class="btn">Заявка на расчёт</a>
+                  </div>
+                  <div class="col-xl-5">
+                     <img src="img/header-img.png" alt="" class="header__img" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="header__mob">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 d-flex justify-content-between align-items-center">
+                  <a href="#" class="logo-mob">
+                     <img src="img/logo-mob.svg" alt="" class="logo__img-mob" />
+                  </a>
+                  <div class="hamburger-menu">
+                     <input id="menu__toggle" type="checkbox" />
+                     <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                     </label>
+                     <ul class="menu__box">
+                        <div class="mob-search__wrap">
+                           <form class="mob-search">
+                              <input type="text" placeholder="Поиск..." />
+                              <button type="submit">
+                                 <img src="img/search.svg" alt="" />
+                              </button>
+                           </form>
+                        </div>
+
+                        <div id="accordion" class="accordion">
+                           <div class="accordion-item">
+                              <div class="accordion-item-header">Главная</div>
+                              <div class="accordion-item-content">
+                                 Контент
+                                 <a href="index.html" class="accord__link">Главная</a>
+                                 <a href="index.html" class="accord__link">Главная</a>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <div class="accordion-item-header">О компании</div>
+                              <div class="accordion-item-content">
+                                 Контент
+                                 <a href="about.html" class="accord__link">О компании</a>
+                                 <a href="about.html" class="accord__link">О компании</a>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <div class="accordion-item-header">Услуги</div>
+                              <div class="accordion-item-content">
+                                 Контент
+                                 <a href="services.html" class="accord__link">Услуги</a>
+                                 <a href="services.html" class="accord__link">Услуги</a>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <div class="accordion-item-header">Клиенты</div>
+                              <div class="accordion-item-content">
+                                 Контент
+                                 <a href="clients.html" class="accord__link">Клиенты</a>
+                                 <a href="clients.html" class="accord__link">Клиенты</a>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <div class="accordion-item-header">Информация</div>
+                              <div class="accordion-item-content">
+                                 Контент
+                                 <a href="information.html" class="accord__link">Информация</a>
+                                 <a href="information.html" class="accord__link">Информация</a>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <div class="accordion-item-header">Контакты</div>
+                              <div class="accordion-item-content">
+                                 Контент
+                                 <a href="contacts.html" class="accord__link">Контакты</a>
+                                 <a href="contacts.html" class="accord__link">Контакты</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="inf__block">
+                           <div class="row align-items-center justify-content-between">
+                              <div class="col">
+                                 <div class="social">
+                                    <img src="img/adress.svg" alt="" class="social__img" />
+                                    <a href="#" class="social__link">Адрес<br /><span>Москва</span></a>
+                                 </div>
+                                 <div class="social">
+                                    <img src="img/tel.svg" alt="" class="social__img" />
+                                    <a href="#" class="social__link">Звонок бесплатный<br /><span>8 800 000 00 00</span></a>
+                                 </div>
+                                 <div class="social">
+                                    <img src="img/mail.svg" alt="" class="social__img" />
+                                    <a href="#" class="social__link">E-mail<br /><span>pochta@pochta.ru</span></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <a onclick="PopUpOp()" href="#" class="btn">Заявка на расчёт</a>
+                        </div>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <!-- menu-container -->
+         </div>
+         <div class="header__content header__content-mob">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-5">
+                     <img src="img/header-img.png" alt="" class="header__img" />
+                  </div>
+               </div>
+            </div>
+            <div class="content__wrap">
+               <div class="row">
+                  <div class="col-xl-7">
+                     <h1 class="header__title">ДОСТАВИМ ВАШ ГРУЗ<br />ИЗ ЛЮБОЙ ТОЧКИ МИРА<br />ОТ ОДНОЙ КОРОБКИ</h1>
+                     <a onclick="PopUpOp()" href="#" class="btn">Заявка на расчёт</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="pluses">
+         <div class="container">
+            <div class="row justify-content-between">
+               <div class="col-xl-3 col-6">
+                  <div class="plus">
+                     <img src="img/plus1.png" alt="" class="plus__img" />
+                     <h3 class="plus__title">17.1</h3>
+                     <p class="plus__text">млн. километров</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-6">
+                  <div class="plus">
+                     <img src="img/plus2.png" alt="" class="plus__img" />
+                     <h3 class="plus__title">61 852</h3>
+                     <p class="plus__text">выполненных заказов</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-6">
+                  <div class="plus">
+                     <img src="img/plus3.png" alt="" class="plus__img" />
+                     <h3 class="plus__title">480</h3>
+                     <p class="plus__text">корпоративных клиентов</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-6">
+                  <div class="plus">
+                     <img src="img/plus4.png" alt="" class="plus__img" />
+                     <h3 class="plus__title">10</h3>
+                     <p class="plus__text">года на рынке логистики</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="about">
+         <div class="container">
+            <h3 class="block__title-mob">О НАС</h3>
+            <div class="row justify-content-between align-items-end">
+               <div class="col-xl-6">
+                  <img src="img/about.jpg" alt="" class="about__img" />
+               </div>
+               <div class="col-xl-6">
+                  <div class="about-block">
+                     <h3 class="block__title">О НАС</h3>
+                     <p class="block__text">
+                        IMEX — это компания, которая дорожит своими клиентами и заработанной репутацией!<br /><br />Работая в сфере
+                        транспортно-логистических услуг более 10 лет, мы изучили потребности наших клиентов. Именно поэтому наши представительства
+                        расположены не только в Москве, но и в Гуанчжоу, Пекине и Иу. Для своих клиентов, мы предлагаем лучшие ставки на доставку и
+                        выгодные условия для сотрудничества. Нас рекомендуют своим друзьям и деловым партнерам, потому что мы не боимся
+                        ответственности и отвечаем за результат.
+                     </p>
+                     <a onclick="PopUpOp()" href="#" class="btn">Заявка на расчёт</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="services">
+         <div class="services__top">
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <h3 class="services__title">НАШИ УСЛУГИ</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="services__content">
+            <div class="container">
+               <div class="row flex-wrap">
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block1.png" alt="" class="block__img" />
+                        <p class="block__text">Международные грузоперевозки</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block2.png" alt="" class="block__img" />
+                        <p class="block__text">Таможенное оформление</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block3.png" alt="" class="block__img" />
+                        <p class="block__text">Авиаперевозки</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block4.png" alt="" class="block__img" />
+                        <p class="block__text">Автомобильные перевозки</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block5.png" alt="" class="block__img" />
+                        <p class="block__text">Морские перевозки</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block6.png" alt="" class="block__img" />
+                        <p class="block__text">Железнодорожные перевозки</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block7.png" alt="" class="block__img" />
+                        <p class="block__text">Перевозки сборных грузов</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block8.png" alt="" class="block__img" />
+                        <p class="block__text">перевозки генеральных грузов</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block9.png" alt="" class="block__img" />
+                        <p class="block__text">Мультимодальные перевозки</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block10.png" alt="" class="block__img" />
+                        <p class="block__text">Аутсорсинг ВЭД</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block11.png" alt="" class="block__img" />
+                        <p class="block__text">Маркировка</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block12.png" alt="" class="block__img" />
+                        <p class="block__text">Сертификация продукции</p>
+                     </a>
+                  </div>
+                  <div class="col-xl-4">
+                     <a href="servicePage.html" class="block d-flex">
+                        <img src="img/services-block13.png" alt="" class="block__img" />
+                        <p class="block__text">Услуги европейской торговой компании</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="stages">
+         <div class="container">
+            <div class="stages__wrap">
+               <h3 class="stages__title">ЭТАПЫ РАБОТ</h3>
+               <div class="row justify-content-between stages__blocks">
+                  <div class="col">
+                     <div class="stages__block" id="block1">
+                        <h3 class="block__title">#01</h3>
+                        <p class="block__text">Ваша заявка</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block2">
+                        <h3 class="block__title">#02</h3>
+                        <p class="block__text">Подробный расчёт</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block3">
+                        <h3 class="block__title">#03</h3>
+                        <p class="block__text">Заключение договора</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block4">
+                        <h3 class="block__title">#04</h3>
+                        <p class="block__text">Оплата за товар</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block5">
+                        <h3 class="block__title">#05</h3>
+                        <p class="block__text">Доставка</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="stages__slider">
+                  <div class="col">
+                     <div class="stages__block" id="block1">
+                        <h3 class="block__title">#01</h3>
+                        <p class="block__text">Ваша заявка</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block2">
+                        <h3 class="block__title">#02</h3>
+                        <p class="block__text">Подробный расчёт</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block3">
+                        <h3 class="block__title">#03</h3>
+                        <p class="block__text">Заключение договора</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block4">
+                        <h3 class="block__title">#04</h3>
+                        <p class="block__text">Оплата за товар</p>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="stages__block" id="block5">
+                        <h3 class="block__title">#05</h3>
+                        <p class="block__text">Доставка</p>
+                     </div>
+                  </div>
+               </div>
+               <a onclick="PopUpOp()" href="#" class="btn">Заявка на расчёт</a>
+            </div>
+         </div>
+      </section>
+      <section class="team">
+         <div class="container">
+            <div class="team__wrap">
+               <h3 class="team__title">НАША КОМАНДА</h3>
+               <div class="slider">
+                  <div class="slide">
+                     <div class="slide__wrap">
+                        <img src="img/slide1.png" alt="" class="slide-img" />
+                        <h3 class="slide__title">Алексей Турчинин</h3>
+                        <p class="slide__text">руководитель направления логистики в Китае</p>
+                     </div>
+                  </div>
+                  <div class="slide">
+                     <div class="slide__wrap">
+                        <img src="img/slide2.png" alt="" class="slide-img" />
+                        <h3 class="slide__title">Алексей Турчинин</h3>
+                        <p class="slide__text">руководитель направления логистики в Китае</p>
+                     </div>
+                  </div>
+                  <div class="slide">
+                     <div class="slide__wrap">
+                        <img src="img/slide3.png" alt="" class="slide-img" />
+                        <h3 class="slide__title">Алексей Турчинин</h3>
+                        <p class="slide__text">руководитель направления логистики в Китае</p>
+                     </div>
+                  </div>
+                  <div class="slide">
+                     <div class="slide__wrap">
+                        <img src="img/slide1.png" alt="" class="slide-img" />
+                        <h3 class="slide__title">Алексей Турчинин</h3>
+                        <p class="slide__text">руководитель направления логистики в Китае</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="trust">
+         <div class="container">
+            <div class="trus__wrap">
+               <h3 class="trust__title">НАМ ДОВЕРЯЮТ</h3>
+               <div class="row flex-wrap">
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust1.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust2.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust3.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust4.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust5.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust6.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust7.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                     <div class="trust__block">
+                        <img src="img/trust8.png" alt="" class="trus__block-img" />
+                     </div>
+                  </div>
+               </div>
+               <a href="#" class="yet__btn">показать ещё</a>
+            </div>
+         </div>
+      </section>
+      <section class="consult">
+         <div class="container">
+            <form action="#" class="get__consult">
+               <h3 class="consult__title">Получить консультацию</h3>
+               <p class="consult__subtitle">Оставьте свои данные и мы Вам перезвоним</p>
+               <div class="row justify-content-between">
+                  <div class="col-xl col-12">
+                     <div class="inp__block">
+                        <p class="block__title">Ваше имя</p>
+                        <input type="text" class="block__inp" placeholder="Сергей Иванов" />
+                     </div>
+                  </div>
+                  <div class="col-xl col-12">
+                     <div class="inp__block">
+                        <p class="block__title">Телефон</p>
+                        <input type="tel" class="block__inp" placeholder="+7 (" />
+                     </div>
+                  </div>
+                  <div class="col-xl col-12">
+                     <div class="inp__block">
+                        <p class="block__title">E-mail</p>
+                        <input type="email" class="block__inp" placeholder="" />
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xl col-12">
+                     <textarea style="resize: none" placeholder="Ваше сообщение..."></textarea>
+                  </div>
+               </div>
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-xl-4 d-flex align-items-center">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                     </label>
+                     <p class="check__text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,</p>
+                  </div>
+                  <div class="col-xl-4">
+                     <button type="submit" class="btn">отправить</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </section>
+      <section class="map">
+         <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A136e2e5dbe24d1a5bd03348283e53a693971fa7ef6d9f2a159a5391d504ee50f&amp;source=constructor"
+            width="100%"
+            height="530"
+            frameborder="0"
+         ></iframe>
+         <div class="container">
+            <div class="inf__block">
+               <div class="row">
+                  <div class="col">
+                     <h3 class="block__title">адрес</h3>
+                     <a href="#" class="block__text">Москва, ул. Краснознамённая 19, оф. 305</a>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <h3 class="block__title">телефон</h3>
+                     <a href="tel:88000000000" class="block__text"
+                        >8 800 000 00 00<br />
+                        +7 924 658-89-78</a
+                     >
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <h3 class="block__title">E-mail</h3>
+                     <a href="#" class="block__text">pochta@pochta.ru</a>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col d-flex align-items-center">
+                     <img src="img/soc1.svg" alt="" class="block__img" />
+                     <img src="img/soc2.svg" alt="" class="block__img" />
+                     <img src="img/soc3.svg" alt="" class="block__img" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="footer__top">
+            <div class="container">
+               <div class="row justify-content-between align-items-start">
+                  <div class="col-xl-2 col-12">
+                     <div class="footer-nav">
+                        <h3 class="footer-nav__title">меню</h3>
+                        <div class="firstNav nav">
+                           <div class="side">
+                              <a href="#" class="nav__tem">О компании</a>
+                              <a href="#" class="nav__tem">Услуги</a>
+                              <a href="#" class="nav__tem">Клиента</a>
+                           </div>
+                           <div class="side">
+                              <a href="#" class="nav__tem">Отзывы</a>
+                              <a href="#" class="nav__tem">Информация</a>
+                              <a href="#" class="nav__tem">Контакты</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-12">
+                     <div class="footer-nav">
+                        <h3 class="footer-nav__title">услуги</h3>
+                        <div class="nav d-flex align-items-start">
+                           <div class="side">
+                              <a href="#" class="nav__tem">Международные грузоперевозки</a>
+                              <a href="#" class="nav__tem">Таможенное оформление</a>
+                              <a href="#" class="nav__tem">Авиаперевозки</a>
+                              <a href="#" class="nav__tem">Автомобильные перевозки</a>
+                              <a href="#" class="nav__tem">Морские перевозки</a>
+                              <a href="#" class="nav__tem">Железнодорожные перевозки</a>
+                              <a href="#" class="nav__tem">Услуги европейской торговой компании</a>
+                           </div>
+                           <div class="side">
+                              <a href="#" class="nav__tem">Перевозки сборных грузов</a>
+                              <a href="#" class="nav__tem">Перевозки генеральных грузов</a>
+                              <a href="#" class="nav__tem">Мультимодальные перевозки</a>
+                              <a href="#" class="nav__tem">Аутсорсинг ВЭД</a>
+                              <a href="#" class="nav__tem">Маркировка</a>
+                              <a href="#" class="nav__tem">Сертификация продукции</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-12">
+                     <div class="footer-nav">
+                        <h3 class="footer-nav__title">Контакты</h3>
+                        <div class="nav">
+                           <a href="#" class="nav__tem">Москва, ул. Краснознамённая 19, оф. 305</a>
+                           <a href="#" class="nav__tem">8 800 000 00 00</a>
+                           <a href="#" class="nav__tem">+7 924 658-89-78</a>
+                           <a href="#" class="nav__tem">pochta@pochta.ru</a>
+                           <div class="socials d-flex align-items-center">
+                              <a href="#" class="social">
+                                 <img src="img/soc-footer1.svg" alt="" class="social-img" />
+                              </a>
+                              <a href="#" class="social">
+                                 <img src="img/soc-footer2.svg" alt="" class="social-img" />
+                              </a>
+                              <a href="#" class="social">
+                                 <img src="img/soc-footer3.svg" alt="" class="social-img" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__bottom">
+            <div class="container">
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-xl-2">
+                     <p class="bottom__text">© «IMEX», 2022</p>
+                  </div>
+                  <div class="col-xl-1">
+                     <p class="bottom__text">Документы</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
