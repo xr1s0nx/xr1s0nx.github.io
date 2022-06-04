@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <link
+         rel="stylesheet"
+         href="bootstrap/css/bootstrap.min.css"
+         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Армада</title>
+      <style>
+         .header {
+            background-image: none;
+            color: #00375b;
+            padding-bottom: 0;
+         }
+
+         .header .header__top {
+            margin-bottom: 30px;
+         }
+
+         .topmenu {
+            border-top: 1px solid #00375b;
+            color: #00375b;
+         }
+
+         .topmenu a {
+            color: #00375b;
+         }
+
+         .tel__num {
+            color: #00375b;
+         }
+
+         .date__Work {
+            color: #5a5f66;
+         }
+
+         .header .header__top .adress__link {
+            color: #5a5f66;
+         }
+
+         .descr__more {
+            opacity: 1 !important;
+         }
+
+         .descr__more span {
+            border: 1px solid #00375b;
+         }
+
+         .descr__more:hover svg path {
+            fill: #ff6230 !important;
+         }
+
+         .descr__more:hover span {
+            border: 1px solid #ff6230;
+         }
+
+         .descr__more svg path {
+            fill: #00375b;
+         }
+
+         .descr__more:hover span {
+            background-color: transparent;
+         }
+
+         .descr__more .more__text {
+            color: #00375b;
+         }
+
+         .descr__more:hover .more__text {
+            border-bottom: 1px solid transparent !important;
+            color: #ff6230;
+         }
+
+         .topmenu a:hover {
+            color: #00375b !important;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="header__top">
+               <div class="header__top-title">
+                  <div class="row d-flex justify-content-between">
+                     <div class="col-10 col-sm-8 col-xl-9 d-flex justify-content-between align-items-center">
+                        <div class="top__header-text d-flex align-items-center">
+                           <a href="#" class="logo">
+                              <img src="img/logo.png" alt="" class="logo__img" />
+                           </a>
+                           <p>В каждом доме<br />Челябинска</p>
+                        </div>
+                        <div class="top__header-text">
+                           <p>18 лет производим<br />и устанавливаем окна</p>
+                        </div>
+                        <div class="top__header-adress">
+                           <a href="#" class="adress__link">ул. Комарова, 135</a>
+                           <a href="#" class="adress__link">ул. Бр. Кашириных, 101</a>
+                        </div>
+                        <div class="mob-tel">
+                           <img src="img/phone-black.svg" alt="" class="tel-icon" />
+                        </div>
+                     </div>
+                     <div class="col-2 col-sm-4 col-xl-3 d-flex justify-content-end">
+                        <a href="#" class="btn header__btn">Заказать звонок</a>
+                        <a href="#" class="mob-menu">
+                           <img src="img/menu-mob-block.svg" alt="" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="header__nav">
+                  <div class="row">
+                     <div class="col-sm-12 col-md-9">
+                        <ul class="topmenu d-flex align-items-center justify-content-between">
+                           <li>
+                              <a href="#"><nobr>О нас</nobr></a>
+                           </li>
+                           <li class="mob-active">
+                              <a href="#" class="fa-angle-down"><nobr>Окна</nobr></a>
+                              <ul class="submenu">
+                                 <li>
+                                    <a href=""><nobr>Окна 1</nobr></a>
+                                 </li>
+                                 <li>
+                                    <a href=""><nobr>Окна 2</nobr></a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class="mob-active">
+                              <a href="#" class="fa-angle-down"><nobr>Балконы</nobr></a>
+                              <ul class="submenu">
+                                 <li>
+                                    <a href=""><nobr>Балконы 1</nobr></a>
+                                 </li>
+                                 <li>
+                                    <a href=""><nobr>Балконы 2</nobr></a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#"><nobr>Наши работы</nobr></a>
+                           </li>
+                           <li class="mob-active">
+                              <a href="#"><nobr>Акции</nobr></a>
+                           </li>
+                           <li>
+                              <a href="#"><nobr>Калькулятор</nobr></a>
+                           </li>
+                           <li>
+                              <a href="#"><nobr>Контакты</nobr></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-0 col-md-3">
+                        <div class="inf d-flex flex-column align-items-end">
+                           <a href="tel:+73517298393" class="tel__num">+7 (351) 729-83-93</a>
+                           <p class="date__Work">пн-вс с 8:00 до 21:00</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="pages__nav">
+         <div class="container">
+            <a href="#" class="page__nav">Главная / </a>
+            <a href="#" class="page__nav">Акции</a>
+         </div>
+      </section>
+      <section class="map-page">
+         <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A11f3bececac73ad112f2e4c86fabacab8665f0fc0eb717d6e609732cdfa59453&amp;source=constructor"
+            width="100%"
+            height="668"
+            frameborder="0"
+         ></iframe>
+         <div class="container">
+            <div class="contacts__block">
+               <h3 class="block__title">Контакты</h3>
+               <div class="mini__block">
+                  <img src="img/contact.svg" alt="" class="block__img" />
+                  <div class="block__descr">
+                     <h3 class="descr__title">Офис продаж</h3>
+                     <h3 class="descr__title">Бр. Кашириных, 101</h3>
+                     <p class="descr__text">ПН — ВС: 8:00 — 19:00</p>
+                     <p class="descr__text">+7 (351) 729-83-93</p>
+                  </div>
+               </div>
+               <div class="mini__block">
+                  <img src="img/contact.svg" alt="" class="block__img" />
+                  <div class="block__descr">
+                     <h3 class="descr__title">Офис продаж</h3>
+                     <h3 class="descr__title">Бр. Кашириных, 101</h3>
+                     <p class="descr__text">ПН — ВС: 8:00 — 19:00</p>
+                     <p class="descr__text">+7 (351) 729-83-93</p>
+                  </div>
+               </div>
+               <div class="mini__block">
+                  <img src="img/contact.svg" alt="" class="block__img" />
+                  <div class="block__descr">
+                     <h3 class="descr__title">Офис продаж</h3>
+                     <h3 class="descr__title">Бр. Кашириных, 101</h3>
+                     <p class="descr__text">ПН — ВС: 8:00 — 19:00</p>
+                     <p class="descr__text">+7 (351) 729-83-93</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="call">
+         <div class="container">
+            <div class="call__wrap">
+               <h2 class="call__title">Бесплатный замер в Челябинске, Копейске</h2>
+               <a href="#" class="btn call__btn">Вызвать замерщика</a>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            <div class="row d-flex align-items-start justify-content-between">
+               <div class="col-sm-5 col-md-5">
+                  <h2 class="footer__title">Компания “Армада”</h2>
+                  <div class="footer__descr">
+                     <p>Единственная компания в Челябинске с рассрочкой без банка на срок до 10 месяцев</p>
+                  </div>
+                  <p class="garant">Производим окна и даём полную гарантию на изделие и работу 5 лет</p>
+               </div>
+               <div class="col-sm-6 col-md-4 d-flex align-items-center justify-content-end">
+                  <div class="navigation d-flex align-items-center justify-content-between">
+                     <div class="footer__nav">
+                        <a href="#" class="nav__item">О компании</a>
+                        <a href="#" class="nav__item">Услуги</a>
+                        <a href="#" class="nav__item">Наши работы</a>
+                        <a href="#" class="nav__item">Акции</a>
+                     </div>
+                     <div class="footer__nav">
+                        <a href="#" class="nav__item">Калькулятор</a>
+                        <a href="#" class="nav__item">Проекты</a>
+                        <a href="#" class="nav__item">Блог</a>
+                        <a href="#" class="nav__item">Контакты</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-10 col-md-3">
+                  <div class="socials">
+                     <div class="block">
+                        <h3 class="block__title">Напишите нам в социальных сетях!</h3>
+                        <a href="#" class="soc__link">
+                           <img src="img/footer-soc1.svg" alt="" class="block-img" />
+                        </a>
+                        <a href="#" class="soc__link">
+                           <img src="img/footer-soc2.svg" alt="" class="block-img" />
+                        </a>
+                     </div>
+                     <div class="block">
+                        <h3 class="block__title">Мы на связи с вами и в мессенджерах!</h3>
+                        <a href="#" class="soc__link">
+                           <img src="img/footer-soc3.svg" alt="" class="block-img" />
+                        </a>
+                        <a href="#" class="soc__link">
+                           <img src="img/footer-soc4.svg" alt="" class="block-img" />
+                        </a>
+                        <a href="#" class="soc__link">
+                           <img src="img/footer-soc5.svg" alt="" class="block-img" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script
+         src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script
+         src="bootstrap/js/bootstrap.min.js"
+         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+         crossorigin="anonymous"
+      ></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
