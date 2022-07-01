@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      <!-- <meta http-equiv="Cache-Control" content="no-cache"> -->
+      <title>Гео607 - Бурение скважин</title>
+      <link href="/images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+      <link rel="stylesheet" href="styles/css/style.min.css?modified=20012009" />
+      <link rel="stylesheet" href="styles/css/revealator.min.css?modified=20012009" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet" />
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+         integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+         crossorigin="anonymous"
+      ></script>
+      <script>
+         SmoothScroll({
+            animationTime: 500,
+            stepSize: 75,
+            accelerationDelta: 30,
+            accelerationMax: 2,
+            keyboardSupport: true,
+            arrowScroll: 50,
+            pulseAlgorithm: true,
+            pulseScale: 4,
+            pulseNormalize: 1,
+            touchpadSupport: true,
+         });
+      </script>
+      
+   </head>
+
+   <body class="revealator" id="body">
+      <div class="preloader">
+         <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+           <path fill="#005ec2"
+             d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+           </path>
+         </svg>
+       </div>
+      <div class="header">
+         <div class="header__links">
+            <a href="#" class="header__link">Наши возможности</a>
+            <a href="#" class="header__link">Схема работы</a>
+            <a href="#" class="header__link">Скважины на карте</a>
+            <a href="#" class="header__link">О компании</a>
+            <a href="/news.html" class="header__link">Новости компании</a>
+            <a href="#" class="header__link">Интересное о бурении</a>
+         </div>
+
+         <div class="col js-menu-toggle">
+            <div class="con">
+               <div class="bar top"></div>
+               <div class="bar middle"></div>
+               <div class="bar bottom"></div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="opportunities">
+            <div class="opportunities__header">
+               <div class="opportunities__header_group">
+                  <div class="opportunities__header_logo-group">
+                     <img class="opportunities__header_logo-group_logo" src="/images/logo.png" alt="" />
+                     <img class="opportunities__header_logo-group_logo-addition" src="/images/logo_addition.png" alt="" />
+                  </div>
+
+                  <div class="opportunities__header_contacts">
+                     <div>
+                        <a href="" class="opportunities__header_text-small" style="margin-top: -20px">8(3012)</a>
+                        <a href="tel:83012600007" class="opportunities__header_text-big">600007</a>
+                        <a href="tel:83012600006" class="opportunities__header_text-big">600006</a>
+
+                        <div class="opportunities__header_contacts_links">
+                           <a href="" class="opportunities__header_text-small">+79021600007</a>
+
+                           <a href="whatsapp://send?phone=79021600007">
+                              <img src="/images/icons/whatsapp.png" />
+                           </a>
+
+                           <a href="whatsapp://send?phone=79021600007">
+                              <img src="/images/icons/telegram.png" />
+                           </a>
+
+                           <a href="viber://chat?number=%2B79021600007">
+                              <img src="/images/icons/viber.png" />
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="btn btn-contact">
+                        <span>Оставить заявку</span>
+                        <img src="/images/waves.png" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="opportunities__drill active">
+               <div class="drill-wrap">
+                  <img src="/images/drill.png" class="opportunities__drill-img" />
+               </div>
+            </div>
+            
+            <div class="opportunities__about opportunities-slider">
+               <!-- <div class="d-flex">
+                  <p>Бурим скважины без<br>разрушения ландшафта участка</p>
+                  <div class="d-flex">
+                     <img src="images/icons/drill.png" alt="">
+                     <p>Глубина до 200 метров и более<br>Бурение скальных пород</p>
+                  </div>
+               </div> -->
+               <div class="opportunities-about__examle">
+                  <div class="opportunities-about__image-group">
+                     <img src="/images/photos/about_1.jpg" alt="" />
+                     <div class="opportunities-about__image-number">1</div>
+                  </div>
+                  <div class="text">Поиск воды<br />осуществляем методом<br />резонансного<br />профилирования.</div>
+               </div>
+
+               <div class="opportunities-about__examle">
+                  <div class="opportunities-about__image-group">
+                     <img src="/images/photos/about_2.jpg" alt="" />
+                     <div class="opportunities-about__image-number">2</div>
+                  </div>
+                  <div class="text">Для бурения мы<br />используем современные<br />компактные буровые<br />установки.</div>
+               </div>
+
+               <div class="opportunities-about__examle">
+                  <div class="opportunities-about__image-group">
+                     <img src="/images/photos/about_3.jpg" alt="" />
+                     <div class="opportunities-about__image-number">3</div>
+                  </div>
+                  <div class="text">Затем обсаживаем<br />скважину долговечными<br />нПВХ или металлическими<br />трубами.</div>
+               </div>
+
+               <div class="opportunities-about__examle">
+                  <div class="opportunities-about__image-group">
+                     <img src="/images/photos/about_4.jpg" alt="" />
+                     <div class="opportunities-about__image-number">4</div>
+                  </div>
+                  <div class="text">Подбираем правильное<br />водоподъемное<br />оборудование<br />для скважины</div>
+               </div>
+            </div>
+
+            <div class="opportunities__description">
+               <div class="description">
+                  <h2 class="revealator-zoomin revealator-once">НАШИ ВОЗМОЖНОСТИ</h2>
+
+                  <div class="description__list revealator-slider">
+                     <div class="description__list-item revealator-slidedown revealator-once revealator-once">
+                        <img src="/images/icons/list_item_1.png" alt="icon" />
+                        Круглогодичное бурение
+                     </div>
+
+                     <div class="description__list-item revealator-slidedown revealator-once revealator-once">
+                        <img src="/images/icons/list_item_2.png" alt="icon" />
+                        Бурения скальных пород погружным пневмоударником
+                     </div>
+
+                     <div class="description__list-item revealator-slidedown revealator-once revealator-once" style="margin-top: -18px">
+                        <img src="/images/icons/list_item_3.png" alt="icon" />
+                        Сверхкомпактные буровые шириной всего 1.5 метра
+                     </div>
+
+                     <div class="description__list-item revealator-slidedown revealator-once revealator-once">
+                        <img src="/images/icons/list_item_4.png" alt="icon" />
+                        Максимальная глубина бурения 150м и более (в зависимости от геологии)
+                     </div>
+
+                     <div class="description__list-item revealator-slidedown revealator-once revealator-once">
+                        <img src="/images/icons/list_item_5.png" alt="icon" />
+                        Принимаем к оплате любые платежные и кредитные карты.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="work">
+            <h2 class="big-letters">скважины</h2>
+            <div class="op-wrap-color">
+               <div class="opportunities__description">
+                  <div class="description">
+                     <div class="description__video-group revealator-slideleft revealator-once">
+                        <div class="watch-vid">
+                           <h2>СМОТРИТЕ ВИДЕО</h2>
+
+                           <h3>
+                              Смотрите видео-презентацию о наших<br />
+                              возможностях, мы можем бурить в любых<br />
+                              условияхпогодных и геологических!
+                           </h3>
+
+                           <h2>НАМ ДОВЕРЯЮТ</h2>
+
+                           <img src="images/companys.png" alt="ГАЗПРОМ ROSNEFT" />
+                        </div>
+
+                        <video class="revealator-rotateright revealator-once" controls="controls" poster="/images/photos/video_poster.jpg">
+                           <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                           <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                           <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"' />
+                        </video>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="opportunities__description opportunities__description-sl">
+               <div class="opportunities__galery galery-slider">
+                  <div class="galery__item revealator-slideright revealator-once">
+                     <img src="/images/photos/galery_1.jpg" />
+                     <span>Оператор управляет машиной дистанционно</span>
+                  </div>
+
+                  <div class="galery__item revealator-slideright revealator-delay2 revealator-once">
+                     <img src="/images/photos/galery_2.jpg" />
+                     <span>Наш офис и база в п. Матросово.</span>
+                  </div>
+
+                  <div class="galery__item revealator-slideright revealator-delay4 revealator-once">
+                     <img src="/images/photos/galery_3.jpg" />
+                     <span>Гусеничные буровые</span>
+                  </div>
+
+                  <div class="galery__item">
+                     <img src="/images/photos/galery_4.jpg" />
+                     <span>Машины сервисной службы</span>
+                  </div>
+
+                  <div class="galery__item">
+                     <img src="/images/photos/galery_5.jpg" />
+                     <span>Современный буровой комплекс</span>
+                  </div>
+
+                  <div class="galery__item">
+                     <img src="/images/photos/galery_6.jpg" />
+                     <span>Наша техника - тяжелый станок для буровзрывных работ IngersollRand CM780D</span>
+                  </div>
+
+                  <div class="galery__item">
+                     <img src="/images/photos/galery_7.jpg" />
+                     <span>Машина для дальних командировок</span>
+                  </div>
+
+                  <div class="galery__item">
+                     <img src="/images/photos/galery_8.jpg" />
+                     <span>Наша техника - гусеничные трактора</span>
+                  </div>
+               </div>
+            </div>
+            <div class="agr-wrap">
+               <div class="work__title revealator-slideup revealator-once">
+                  ЧИСТАЯ ВОДА ИЗ СКВАЖИНЫ<br />
+                  - ОСНОВА ЗДОРОВЬЯ<br />
+                  И БЛАГОПОЛУЧИЯ ВАШЕЙ СЕМЬИ
+               </div>
+            </div>
+
+            <h2 class="work__title-main revealator-slideup revealator-once">
+               <div>СХЕМА НАШЕЙ РАБОТЫ С ЗАКАЗЧИКОМ</div>
+               <img src="/images/waves.png" />
+            </h2>
+
+            <div class="work__contacts revealator-slidedown revealator-once revealator-once">
+               <div class="work__contact-house"><img src="/images/icons/house.png" /></div>
+
+               <div>
+                  <span class="work__contacts-about">
+                     Уже более 7500 семей пользуются скважинами от<br />
+                     нашей компании глубиной до 200 метров!
+                  </span>
+
+                  <div class="work__contacts-group">
+                     <span class="work__contacts-about">
+                        Оставляете заявку по тел.,<br />
+                        вайбер, вотсап<br />
+                        или с помощью сайта<br />
+                     </span>
+
+                     <div class="work__contacts-links-group">
+                        <h1>+79021600007</h1>
+
+                        <div class="work__contacts-links">
+                           <img src="/images/icons/phone.png" />
+                           <img src="/images/icons/telegram_light.png" />
+                           <img src="/images/icons/viber_light.png" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="btn btn-contact btn-contact-dekstop">
+                  <span>Оставить заявку</span>
+                  <img src="/images/waves.png" />
+               </div>
+            </div>
+
+            <div class="flex jc-center revealator-fade revealator-duration10 revealator-once">
+               <div class="work__steps steps-slider">
+                  <div class="work__step">
+                     <div class="step__title">1 шаг</div>
+
+                     <div class="step__about">
+                        Мы определяем глубину будущей скважины исходя из своей огромной базы опыта и гидрологических карт – бесплатно. При
+                        необходимости определяем глубину специализированным прибором.
+                     </div>
+                  </div>
+
+                  <div class="work__step">
+                     <div class="step__title">2 шаг</div>
+
+                     <div class="step__about">
+                        Определяем наиболее подходящую технологию бурения под вашу задачу. Оговариваем дату и время заезда буровой.
+                     </div>
+                  </div>
+
+                  <div class="work__step">
+                     <div class="step__title">3 шаг</div>
+
+                     <div class="step__about">
+                        Приезд бригады в назначенное время, заключение договора. Начало работ по бурению. Во время бурения буровой мастер определяет
+                        наличие водоносного горизонта по разным признакам.
+                     </div>
+                  </div>
+
+                  <div class="work__step last-step">
+                     <div class="step__title">4 шаг</div>
+
+                     <div class="step__about">
+                        Спуск обсадной колонны. Труба для обсадной может быть стальной или пластиковой, на Ваш выбор. Мы рекомендуем пластиковую трубу
+                        нПВХ.
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="work__map-title flex jc-center revealator-slideup revealator-once revealator-below">
+               <div class="map__header">
+                  <div class="map__title">
+                     <h2>СКВАЖИНЫ<br />НА КАРТЕ</h2>
+                     <img src="/images/icons/arrow.png" />
+                  </div>
+
+                  <div class="map__about">
+                     <img src="/images/icons/cran.png" />
+
+                     Смотреть карту наших работ, скорее всего<br />
+                     ваши соседи уже пользовались нашими<br />
+                     услугами бурения
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container main-container">
+         <div class="opportunities-about background">
+            <h2 class="big-letters">бурение</h2>
+            <div class="flex jc-center">
+               <div class="opportunities-about__map">
+                  <iframe
+                     class="opportunities-about__iframe"
+                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A90c4f49aa6e4889fb1f6aafb087289a71766971afeb357b491bb164426f88ade&amp;source=constructor"
+                     width="100%"
+                     height="446"
+                     frameborder="0"
+                  ></iframe>
+
+                  <div class="opportunities-about__iframe-close js-fullscreen-map">✕</div>
+
+                  <div class="btn btn-contact js-fullscreen-map revealator-duration10 revealator-slideup revealator-once">
+                     <span>Открыть<br />карту</span>
+                     <img src="/images/waves.png" />
+                  </div>
+
+                  <div class="map__map-arrow">
+                     <img src="/images/icons/slider_next.png" />
+                  </div>
+               </div>
+            </div>
+
+            <div class="flex jc-center">
+               <div class="opportunities-about__group wrap23">
+                  <img src="/images/about.png" />
+
+                  <div>
+                     <h2>О КОМПАНИИ</h2>
+
+                     <div class="opportunities-about__content revealator-slideleft revealator-once">
+                        Быть лучшими за счёт исключительного качества<br />предоставляемых услуг и безупречной честности<br />к клиенту.
+                     </div>
+                     <div class="opportunities-about__content revealator-slideleft revealator-once">
+                        Мы используем современную технику и<br />инструмент. В своей работе делаем ставку на<br />технологии и эффективность.
+                     </div>
+                     <div class="opportunities-about__content revealator-slideleft revealator-once">
+                        В своей работе делаем ставку на технологии и<br />эффективность. Все буровые мастера компании<br />имеют профильное
+                        образование по специальности.
+                     </div>
+                     <a href="#">Узнать больше о нас</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="arrangement">
+            <div class="agr-wrap">
+               <div class="arrangement__title-group revealator-fade revealator-duration10 revealator-once">
+                  <div class="arrangement__title">ОБУСТРОЙСТВО СКВАЖИНЫ</div>
+                  <div class="arrangement__about">
+                     Скважина «под ключ» — профессиональный<br />
+                     подбор и монтаж водоподъемного<br />
+                     оборудования
+                  </div>
+               </div>
+            </div>
+
+            <!-- <img src="/images/arrangement.jpg" class="arrangement__image" /> -->
+         </div>
+      </div>
+
+      <div class="problems">
+         <div class="flex jc-center">
+            <div class="problems__title revealator-zoomin revealator-once">Типичные проблемы при бурении скважин и как мы их решаем!</div>
+         </div>
+
+         <div class="flex jc-center">
+            <ul class="accordion">
+               <li class="revealator-slideleft revealator-once">
+                  <h3>Заиливание скважин на песок.</h3>
+                  <div class="accordion__answer">
+                     <div class="accordion__title">наше решение</div>
+                     <p>
+                        Качественная обсыпка зоны фильтра щебнем не менее двух тонн, точный подбор фильтра под конкретный разрез, перфорация на
+                        обсадной точно в водоносном горизонте.
+                     </p>
+                  </div>
+               </li>
+
+               <li class="revealator-slideleft revealator-delay2 revealator-once">
+                  <h3>Невозможность проезда к месту бурения на громоздких геологоразведочных машинах</h3>
+                  <div class="accordion__answer">
+                     <div class="accordion__title">наше решение</div>
+                     <p>...</p>
+                  </div>
+               </li>
+
+               <li class="revealator-slideleft revealator-delay4 revealator-once">
+                  <h3>Плохой сервис.</h3>
+                  <div class="accordion__answer">
+                     <div class="accordion__title">наше решение</div>
+                     <p>...</p>
+                  </div>
+               </li>
+
+               <li class="revealator-slideleft revealator-delay6 revealator-once">
+                  <h3>Плохое качество воды.</h3>
+                  <div class="accordion__answer">
+                     <div class="accordion__title">наше решение</div>
+                     <p>...</p>
+                  </div>
+               </li>
+
+               <li class="revealator-slideleft revealator-delay8 revealator-once">
+                  <h3>Неправильный подбор насоса.</h3>
+                  <div class="accordion__answer">
+                     <div class="accordion__title">наше решение</div>
+                     <p>...</p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="form">
+            <div class="form__container">
+               <div class="form__title revealator-slideleft revealator-once">Нужна чистая вода<br />для вашей семьи?</div>
+               <div class="form__about revealator-slideleft revealator-once">Оставьте заявку для расчета<br />стоимости и консультации</div>
+
+               <div class="form__input-group revealator-slideleft revealator-once">
+                  <input type="text" placeholder="Где нужно пробурить" />
+                  <input id="phone" type="text" placeholder="Номер телефона" />
+               </div>
+
+               <div class="flex revealator-slideleft revealator-once">
+                  <span
+                     >Вы согласны с <b>политикой<br />персональных данных</b></span
+                  >
+
+                  <div class="btn btn-contact">
+                     <span>Оставить заявку</span>
+                     <img src="/images/waves.png" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container footer-container">
+         <div class="footer">
+            <div class="footer__group">
+               <div class="footer__item footer__item-1">
+                  <img src="/images/photos/galery_2.jpg" alt="photo" />
+
+                  <span>
+                     670009, г. Улан-Удэ, ул. Шевцовой 2 «Г»<br />
+                     <a href="mailto:info@geo607.ru?subject=Заявка" class="footer__underline">e-mail: info@geo607.ru</a><br /><br />
+                     <div class="footer__underline js-fullscreen-map">Смотреть на карте</div>
+                  </span>
+               </div>
+
+               <div class="footer__item footer__item-2">
+                  <span class="footer__num">8(3012)</span>
+
+                  <div class="footer__contact-group">
+                     <div class="flex">
+                        <a href="tel:83012600008">
+                           <h1>600008</h1>
+                        </a>
+                        <span>Служба сервиса</span>
+                     </div>
+
+                     <div class="flex">
+                        <a href="tel:83012600007">
+                           <h1>600007</h1>
+                        </a>
+                        <span>Отдел заказов</span>
+
+                        <div class="footer__contact">
+                           <img src="/images/icons/phone__footer.png" />
+                           <img src="/images/icons/telegram__footer.png" />
+                        </div>
+                     </div>
+
+                     <div class="flex">
+                        <a href="tel:89021600006">
+                           <h1>600006</h1>
+                        </a>
+                        <span>Бухгалтерия</span>
+                     </div>
+                  </div>
+
+                  <div class="flex footer__vk-group">
+                     <div class="footer__underline">Наша официальная группа VKontakte</div>
+                     <img src="/images/icons/vk__footer.png" />
+                  </div>
+               </div>
+
+               <div class="footer__item footer__item-3">
+                  <div class="footer__logo">
+                     <img src="/images/logo.png" alt="logo" />
+                  </div>
+
+                  <span>
+                     <a href="#" class="footer__underline">Политика<br />конфиденциальности</a><br /><br />
+                     © 2012-2018, Буровая компания<br />
+                     "Гео607" ИП Ефимов М.Г.
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="/javascript/jquery-3.6.0.min.js"></script>
+      <script src="/javascript/slick.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script src="/javascript/main.js?modified=20012010"></script>
+   </body>
+</html>

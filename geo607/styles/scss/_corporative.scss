@@ -1,0 +1,288 @@
+.corporative {
+    width: 100%;
+
+    .container {
+        max-width: 1140px;
+        overflow: visible;
+    }
+
+    &__breadcrumbs {
+        margin-top: 20px;
+
+        .corporative__breadcrumbs_home {
+            color: #124095;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        font-family: Gilroy;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: #124095;
+        margin-top: 47px;
+    }
+
+    &__fullscreen-video {
+        position: relative;
+        width: 100%;
+        height: 593px;
+        margin-top: 48px;
+
+        video {
+            width: 100%;
+            height: 593px;
+            object-fit: cover;
+        }
+
+        h2 {
+            position: absolute;
+            font-family: Gilroy;
+            font-size: 33.5px;
+            line-height: 40px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-top: 242px;
+            left: 457px;
+        }
+    }
+
+    &__about {
+        max-width: 1010px;
+    }
+
+    &__about_title {
+        font-family: Gilroy;
+        font-size: 26.9px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: #333333;
+        margin-top: 64px;
+        margin-bottom: 37px;
+    }
+
+    &__about_text {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-style: italic;
+        color: #333333;
+    }
+
+    &__safety {
+        background: linear-gradient(135deg, rgb(54, 164, 221), rgb(18, 64, 149));
+        padding: 75px 0 68px 0;
+        margin-top: 62px;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 68px;
+            padding: 0;
+            color: $white;
+        }
+
+        img {
+            box-shadow: -2px 0px 46px -8px rgba(34, 60, 80, 0.2);
+            width: 360px;
+            height: 272px;
+        }
+
+        .corporative__safety_group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .corporative__safety_item {
+            width: 360px;
+        }
+
+        .corporative__safety_item_title {
+            font-family: Gilroy;
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #ffffff;
+            margin-top: 39px;
+        }
+
+        .corporative__safety_item_readon {
+            font-family: Gilroy;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #79caa4;
+            border-bottom: 1px solid #79caa4;
+            width: max-content;
+            margin-top: 19px;
+        }
+    }
+
+    &__aboutcorporative {
+        margin: 0 auto;
+        margin-top: 74px;
+        max-width: 1140px;
+
+        .corporative__aboutcorporative_item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 72px;
+        }
+
+        .corporative__aboutcorporative_content {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #4c4c4c;
+            max-width: 525px;
+            margin-top: 46px;
+        }
+
+        .corporative__aboutcorporative_detail {
+            font-family: Gilroy;
+            font-size: 17.8px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #4c4c4c;
+            border-bottom: 1px solid #79caa4;
+            width: max-content;
+            margin-top: 33px;
+        }
+
+        img {
+            width: 540px;
+            height: 508px;
+            object-fit: cover;
+        }
+    }
+
+    &__finish {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-image: url("/images/background_corporative_finish.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 586px;
+        background-color: #4c4c4c;
+        margin-bottom: -15px;
+        margin-top: 70px;
+
+        h2 {
+            font-family: Gilroy;
+            font-size: 33.5px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #ffffff;
+            max-width: 368px;
+            margin-top: 111px;
+            margin-bottom: 49px;
+            padding-left: 0 !important;
+        }
+
+        .corporative__finish_container {
+            width: 1140px;
+            min-height: 586px;
+        }
+
+        .corporative__finish_about {
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #ffffff;
+            max-width: 538px;
+        }
+
+        .corporative__finish_detail {
+            font-family: Gilroy;
+            font-size: 17.8px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #ffffff;
+            border-bottom: 1px solid #79caa4;
+            width: max-content;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint1250) {
+    .corporative {
+        &__breadcrumbs,
+        &__about,
+        &__finish,
+        &__aboutcorporative,
+        h2 {
+            padding-left: 25px;
+            padding-right: 25px;
+            width: calc(100vw - 50px);
+        }
+
+        &__fullscreen-video {
+            position: relative;
+            width: 100%;
+            height: 593px;
+            margin-top: 48px;
+
+            video {
+                width: 100%;
+                height: 593px;
+                object-fit: cover;
+            }
+
+            h2 {
+                left: 50% !important;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &__safety {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            gap: 0;
+
+            img {
+                width: 100vw;
+                object-fit: cover;
+            }
+
+            .corporative__safety_item_title {
+                margin-top: 15px;
+                width: 100vw;
+            }
+
+            .corporative__safety_item_readon {
+                width: 100vw;
+                border: none;
+                margin-top: 10px;
+                margin-bottom: 35px;
+            }
+        }
+
+        .corporative__safety_group {
+            display: block;
+            // justify-content: space-between;
+        }
+
+        &__aboutcorporative {
+            max-width: 540px;
+            margin-top: 0;
+
+            h2 {
+                padding: 0;
+            }
+        }
+
+        .corporative__aboutcorporative_item {
+            max-width: 540px !important;
+            margin-top: 25px;
+
+            img {
+                display: none;
+            }
+        }
+    }
+}

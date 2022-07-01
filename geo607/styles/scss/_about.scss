@@ -1,0 +1,178 @@
+.opportunities-about {
+    &.background {
+        background: linear-gradient(135deg, rgb(54, 164, 221), rgb(18, 64, 149));
+        height: 939px;
+    }
+
+    &.active {
+        .opportunities-about__iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 995;
+        }
+
+        .opportunities-about__iframe-close {
+            position: fixed;
+            top: 87px;
+            right: 0;
+            z-index: 999;
+            margin: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+        
+            background: linear-gradient(135deg, rgb(149, 204, 59), rgb(71, 164, 10));
+            box-shadow: 0px 0px 0px 7px rgba(148, 204, 59, 0.429);
+        
+            font-family: "Gilroy";
+            text-align: center;
+            font-size: 22.5px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: $white;
+        
+            cursor: pointer;
+            transition: 0.3s;
+            user-select: none;
+        }
+    }
+
+    .opportunities-about__iframe-close {
+        display: none;
+    }
+
+    &__map {
+        margin-top: -55px;
+        margin-bottom: 34px;
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    &__group {
+        display: flex;
+        gap: 57px;
+        
+        .opportunities-about__title-group {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        img {
+            width: 539px;
+            height: 572px;
+            z-index: 200;
+        }
+
+        h2 {
+            font-family: Gilroy;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 49px;
+            margin-top: 25px;
+        }
+
+        a {
+            font-family: Gilroy;
+            font-size: 17.8px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: $white;
+            float: right;
+            border-bottom: 1px solid #79caa4;
+            text-decoration: none;
+        }
+
+        .opportunities-about__content {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #eef3f9;
+            margin-bottom: 42px;
+            padding-left: 40px;
+            border-left: 3px solid #73dcff;
+        }
+    }
+
+    &__map {
+        position: relative;
+        height: min-content;
+
+        .btn.btn-contact {
+            position: absolute;
+            bottom: 59px;
+            right: 227px;
+        }
+
+        .map__map-arrow {
+            position: absolute;
+            left: 50%;
+            bottom: -22.5px;
+            transform: translate(-50%, 0) rotate(90deg);
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint1420) {
+    .opportunities-about {
+        background: linear-gradient(135deg, rgb(54, 164, 221), rgb(18, 64, 149));
+
+        &__map,
+        &__map img.opportunities-about__map-image {
+            width: 100vw;
+            height: 463px;
+            object-fit: cover;
+        }
+
+        .btn.btn-contact {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint1250) {
+    .opportunities-about {
+        background: linear-gradient(135deg, rgb(54, 164, 221), rgb(18, 64, 149));
+        height: max-content;
+
+        &__group {
+            display: block;
+            margin-bottom: 45px;
+
+            // img {
+            //     display: none;
+            // }
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint520) {
+    .opportunities-about {
+        padding: 40px;
+        width: calc(100vw - 90px) !important;
+
+        img {
+            display: none;
+        }
+
+        iframe {
+            width: calc(100vw - 80px);
+        }
+    }
+}

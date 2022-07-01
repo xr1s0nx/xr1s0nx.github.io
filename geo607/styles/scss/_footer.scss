@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 363px;
+    background-image: url("/images/footer.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #104ca4;
+
+    * {
+        white-space: nowrap;
+    }
+
+    span, .footer__vk-group {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1144px;
+        width: 100%;
+    }
+
+    &__underline {
+        width: max-content;
+        border-bottom: 2px solid #96d469;
+        cursor: pointer;
+    }
+
+    &__item-1 {
+        img {
+            display: block;
+            margin-bottom: 16px;
+            width: 275px;
+            height: 134px;
+        }
+    }
+
+    &__item-2 {
+        h1 {
+            font-family: Gilroy;
+            font-size: 41.4px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .flex {
+            align-items: center;
+        }
+
+        .footer__vk-group {
+            .footer__underline {
+                margin-right: 13px;
+            }
+        }
+    }
+
+    &__item-3 {
+        span, a {
+            line-height: 22px;
+        }
+    }
+
+    &__num {
+        font-family: Gilroy;
+        font-size: 14.2px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: #ffffff;
+    }
+
+    &__contact-group {
+        margin-bottom: 58px;
+    }
+
+    &__contact {
+        margin-left: 17px;
+
+        img {
+            margin-right: 6px;
+        }
+    }
+
+    &__logo {
+        margin: 13px 0 60px 0;
+        width: 187px;
+        height: 53px;
+    }
+
+    .flex {
+        align-items: flex-end;
+
+        span {
+            margin-bottom: 7px;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+            margin-left: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint1250) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: max-content;
+        background-repeat: repeat;
+        background-size: 370%;
+
+        &__group {
+            display: block;
+            width: max-content;
+            padding: 50px;
+        }
+    }
+
+    .footer-container {
+        width: 100vw;
+        overflow: hidden;
+    }
+}
